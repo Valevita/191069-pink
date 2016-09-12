@@ -5,8 +5,113 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="logo">
+        <img src="http://placehold.it/75x22" alt="pink-logo">
+      </div>
+      <nav class="main-nav  main-nav--closed">
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">Html Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="intro">
+        <p class="intro__message">Взгляните на жизнь иначе!</p>
+      </div>
+      <div class="download">
+        <a class="button-1" href="#">Скачать приложение</a>
+        <a class="download__apple" href="#">Apple</a>
+        <a class="download__android" href="#">Android</a>
+        <a class="download__windows" href="#">Windows</a>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <div class="main-info">
+        <p class="main-info__text">Устали от серости мегаполиса?</p>
+        <p class="main-info__text">Нам есть, что вам предложить!</p>
+        <div class="main-info__features">
+          <div class="main-info__feature-item">
+            <b class="main-info__feature-item-title">Поднимает настроение</b>
+            <p class="main-info__feature-item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="main-info__feature-item">
+            <b class="main-info__feature-item-title">Меняет мир вокруг</b>
+            <p class="main-info__feature-item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="main-info__feature-item">
+            <b class="main-info__feature-item-title">Заводит новых друзей</b>
+            <p class="main-info__feature-item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+        <div class="main-info__image">
+          <img src="http://placehold.it/157x320" alt="iphone-pink">
+        </div>
+      </div>
+      <div class="review-block">
+        <div class="review-block__item">
+          <b class="review-block__item-name">Николай Петров</b>
+          <p class="review-block__item-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+        </div>
+        <div class="review-block__radiobuttons">
+          <label class="review-block__label" for="review-1">1</label>
+          <input class="review-block__radio" type="radio" name="review" value="review-1" id="review-1" checked>
+          <label class="review-block__label" for="review-2">2</label>
+          <input class="review-block__radio" type="radio" name="review" value="review-2" id="review-2">
+          <label class="review-block__label" for="review-3">3</label>
+          <input class="review-block__radio" type="radio" name="review" value="review-3" id="review-3">
+        </div>
+      </div>
+      <div class="price">
+        <table class="price__table">
+          <tr>
+            <th class="price__table-header">
+              <span class="price__table-plan">Стандарт</span>
+              <span class="price__table-price">3,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="price__table-row">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="price__table-row">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price__table-row">Комментарии</td>
+          </tr>
+        </table>
+        <div class="price__radiobuttons">
+          <label class="price__label" for="plan-1">1</label>
+          <input class="price__radio" type="radio" name="plan" value="plan-1" id="plan-1">
+          <label class="price__label" for="plan-2">2</label>
+          <input class="price__radio" type="radio" name="plan" value="plan-2" id="plan-2" checked>
+          <label class="price__label" for="plan-3">3</label>
+          <input class="price__radio" type="radio" name="plan" value="plan-3" id="plan-3">
+        </div>
+      </div>
+    </main>
+    <footer class="index-footer">
+        <p class="index-footer__text">Остались вопросы? <br> Свяжитесь с нами!</p>
+        <div class="index-footer__contacts">
+          <div class="index-footer__contact-item">
+            <span class="index-footer__contact-header">Звоните:</span>
+            <span class="index-footer__contact-content">+7(812)555-66-66</span>
+          </div>
+          <div class="index-footer__contact-item">
+            <span class="index-footer__contact-header">Пишите:</span>
+            <span class="index-footer__contact-content">mail@htmlacademy.ru</span>
+          </div>
+          <div class="index-footer__contact-item">
+            <span class="index-footer__contact-header">Приезжайте в гости:</span>
+            <span class="index-footer__contact-content">ул. Большая Конюшенная, 19/8</span>
+          </div>
+        </div>
+        <div class="index-footer__map">
+          <img src="http://placehold.it/320x200" alt="map">
+        </div>
+      </footer>
   </body>
 </html>
