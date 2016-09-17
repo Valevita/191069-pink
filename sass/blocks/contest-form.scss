@@ -1,0 +1,102 @@
+.contest-form__list {
+  width: 260px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contest-form__list-item {
+  margin-bottom: 60px;
+}
+
+.contest-form__full-name {
+  width: $width;
+  margin: 0 auto;
+}
+
+.contest-form__contacts {
+  width: $width;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+
+.contest-form__achievements {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 35px;
+  background-color: $grey-bg;
+}
+
+.contest-form__emotions {
+  margin-bottom: 48px;
+}
+
+.contest-form__app {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $grey-bg;
+}
+
+.contest-form__title {
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+}
+
+.contest-form__label {
+  display: block;
+  margin-left: 23px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.contest-form__input {
+  display: block;
+  box-sizing: border-box;
+  width: $width;
+  height: 63px;
+  margin-bottom: 20px;
+  padding-left: 23px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__label-checkbox {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+
+.contest-form__textarea {
+  display: block;
+  width: $width;
+  margin: 0 auto;
+  border: 2px solid #e5e5e5;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+
+.contest-form__required {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest-form__star {
+  color: $pink;
+}

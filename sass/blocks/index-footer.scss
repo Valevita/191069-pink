@@ -1,0 +1,27 @@
+.index-footer {
+  text-align: center;
+}
+
+.index-footer__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  color: $dark-blue;
+}
+
+.index-footer__contact-header {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: $dark-blue;
+}
+
+.index-footer__contact-content {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  color: $pink;
+}

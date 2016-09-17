@@ -1,0 +1,25 @@
+.review-block {
+  padding-bottom: 60px;
+  background-color: #fff;
+  color: $dark-blue;
+}
+
+.review-block__item {
+  text-align: center;
+}
+
+.review-block__item-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.review-block__item-content {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.review-block__radiobuttons {
+  text-align: center;
+}
