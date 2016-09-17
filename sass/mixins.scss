@@ -1,0 +1,16 @@
+@mixin button() {
+  display: block;
+  box-sizing: border-box;
+  width: $width;
+  height: 63px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background-color: #2aab6d;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+

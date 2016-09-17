@@ -3,31 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body">
     <header class="main-header">
       <div class="logo">
-        <img src="http://placehold.it/75x22" alt="pink-logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="23">
       </div>
       <nav class="main-nav  main-nav--closed">
         <a class="main-nav__toggle" href="#">Меню</a>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">Html Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <div class="intro">
-        <p class="intro__message">Взгляните на жизнь иначе!</p>
+        <p class="intro__message">Взгляните на жизнь <br> иначе!</p>
       </div>
       <div class="download">
         <a class="download-btn btn-default" href="#">Скачать приложение</a>
-        <a class="download__apple" href="#">Apple</a>
-        <a class="download__android" href="#">Android</a>
-        <a class="download__windows" href="#">Windows</a>
+        <div class="download__os">
+          <a class="download__apple" href="#">Apple</a>
+          <a class="download__android" href="#">Android</a>
+          <a class="download__windows" href="#">Windows</a>
+        </div>
         <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
       <div class="main-info">
@@ -46,9 +50,6 @@
             <b class="main-info__feature-item-title">Заводит новых друзей</b>
             <p class="main-info__feature-item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
-        </div>
-        <div class="main-info__image">
-          <img src="http://placehold.it/157x320" alt="iphone-pink">
         </div>
       </div>
       <div class="review-block">
@@ -69,8 +70,8 @@
         <table class="price__table">
           <tr>
             <th class="price__table-header">
-              <span class="price__table-plan">Стандарт</span>
-              <span class="price__table-price">3,99 USD</span>
+              <p class="price__table-plan">Стандарт</p>
+              <p class="price__table-price">3,99 USD</p>
             </th>
           </tr>
           <tr>
@@ -110,7 +111,7 @@
           </div>
         </div>
         <div class="index-footer__map">
-          <img src="http://placehold.it/320x200" alt="map">
+          <img src="img/bg-map-mobile@1x.png" alt="map">
         </div>
       </footer>
   </body>

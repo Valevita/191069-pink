@@ -1,0 +1,20 @@
+.intro {
+  height: 396px;
+  padding-top: 30px;
+  background-color: $dark-blue;
+  background-image:
+    url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.intro__message {
+  margin: 0;
+}

@@ -1,0 +1,52 @@
+.photo-block {
+  width: $width;
+  margin: 20px auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.photo-block__comment {
+  box-sizing: border-box;
+  width: $width;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $grey-bg;
+}
+
+.photo-block__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $dark-blue;
+}
+
+.photo-block__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $dark-blue;
+}
+
+.photo-block__message {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+.photo-block__like {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.photo-block__img {
+  width: $width;
+  height: 180px;
+}
+
