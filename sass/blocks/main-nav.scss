@@ -1,5 +1,23 @@
 .main-nav {
-  backlground-color: $dark-blue;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $dark-blue;
+}
+
+.main-nav__short-menu {
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 25px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  font-size: 0;
 }
 
 .main-nav__list {
@@ -9,10 +27,45 @@
   text-align: center;
 }
 
+.main-nav__item {
+  min-height: 64px;
+}
+
 .main-nav__link {
   font-weight: bold;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
+}
+
+@media (min-width: 700px){
+  .main-nav {
+    width: auto;
+  }
+
+  .main-nav__short-menu {
+    @include container;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__wrapper {
+    @include container;
+  }
+
+  .main-nav__list {
+    font-size: 0;
+    text-align: right;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 82px;
+  }
+
+  .main-nav__short-menu {
+    display: none;
+  }
 }
 
