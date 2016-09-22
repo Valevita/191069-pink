@@ -1,12 +1,44 @@
+.page-footer {
+  @include container;
+  font-size: 0;
+  padding-bottom: 30px;
+}
+
+.page-footer--no-display {
+  display: none;
+}
+
 .page-footer__copyright {
+  width: 150px;
+  margin: 0 auto;
+  min-height: 36px;
+  padding-top: 5px;
   text-align: center;
 }
 
 .page-footer__developed {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 15px;
+  margin-right: 15px;
   font-size: 14px;
   line-height: 18px;
   color: $dark-blue;
 }
+
+@media (min-width: 700px) {
+  .page-footer {
+    margin-top: 70px;
+  }
+
+  .page-footer--no-display {
+    display: block;
+  }
+
+  .page-footer__copyright {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+  }
+}
+
+

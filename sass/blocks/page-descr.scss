@@ -1,11 +1,26 @@
 .page-descr {
-  margin: 0;
   padding-top: 35px;
   padding-bottom: 53px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.page-descr__text {
+  width: $width;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  .page-descr__text {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-descr__text {
+    width: 820px;
+  }
 }

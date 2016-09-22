@@ -1,29 +1,32 @@
-.photo-block {
-  width: $width;
+.panorama {
+  width: 320px;;
   margin: 20px auto;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+.panorama__img {
+  width: 320px;
+  height: 137px;
+}
 
-.photo-block__comment {
+.panorama__comment {
   box-sizing: border-box;
   width: $width;
   margin: 0 auto;
   padding-left: 18px;
-  padding-right: 18px;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: $grey-bg;
 }
 
-.photo-block__name {
+.panorama__name {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   color: $dark-blue;
 }
 
-.photo-block__time {
+.panorama__time {
   font-size: 12px;
   line-height: 24px;
   font-weight: lighter;
@@ -31,7 +34,7 @@
   color: $dark-blue;
 }
 
-.photo-block__message {
+.panorama__message {
   margin: 0;
   margin-bottom: 10px;
   font-size: 14px;
@@ -39,7 +42,7 @@
   color: $dark-blue;
 }
 
-.photo-block__like {
+.panorama__like {
   font-size: 12px;
   line-height: 24px;
   font-weight: lighter;
@@ -47,41 +50,29 @@
   color: $pink;
 }
 
-.photo-block__img {
-  width: $width;
-  height: 180px;
-}
-
 @media (min-width: 700px) {
-  .photo-block {
-    display: inline-block;
-    vertical-align: top;
-    width: 300px;
-    height: 455px;
-    margin-right: 20px;
+  .panorama {
+    width: 700px;
   }
 
-  .photo-block:nth-child(2n) {
-    margin-right: 0;
+  .panorama__img {
+    width: 700px;
+    height: 509px;
   }
 
-  .photo-block__img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .photo-block__comment {
-    width: 300px;
+  .panorama__comment {
+    @include container;
   }
 }
 
 @media (min-width: 1200px) {
-  .photo-block:nth-child(2n) {
-    margin-right: 20px;
+  .panorama {
+    width: 960px;
   }
 
-  .photo-block:nth-child(3n) {
-    margin-right: 0;
+  .panorama__img {
+    width: 960px;
+    height: 506px;
   }
 }
 

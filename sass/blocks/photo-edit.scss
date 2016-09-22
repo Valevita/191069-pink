@@ -1,6 +1,46 @@
 .photo-edit {
-  width: $width;
-  margin: 0 auto;
-  padding: 20px;
+  padding-top: 20px;
   background-color: $grey-bg;
+}
+
+.photo-edit__wrapper {
+  @include container;
+}
+
+.photo-edit__img {
+  width: 280px;
+  height: 374px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .photo-edit__wrapper {
+    @include clearfix;
+  }
+
+  .photo-edit__img {
+    float: left;
+    width: 300px;
+    height: 400px;
+
+  }
+
+  .photo-edit__controls-wrapper {
+    float: right;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-edit {
+    @include container;
+  }
+
+  .photo-edit__wrapper {
+    width: 800px;
+  }
+
+  .photo-edit__controls-wrapper {
+    width: 410px;
+  }
 }

@@ -11,108 +11,122 @@
       <div class="logo">
         <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="23">
       </div>
-      <nav class="main-nav  main-nav--closed">
-        <a class="main-nav__toggle" href="#">Меню</a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
-        </ul>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__toggle" href="#">Меню</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <h2 class="page-title">Фотографии пользователей</h2>
-    <p class="page-descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    <div class="photo-block photo-block-panorama">
-      <div class="photo-block__img-panorama">
-        <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="img-1">
+    <div class="page-title">
+      <h2 class="page-title__text">Фотографии пользователей</h2>
+    </div>
+    <div class="page-descr">
+      <p class="page-descr__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    </div>
+    <div class="panorama">
+      <div class="panorama__img">
+        <img src="img/panorama-mobile@1x.jpg"  alt="img-1">
       </div>
-      <div class="photo-block__comment">
-        <b class="photo-block__name">Анна</b>
-        <span class="photo-block__time">(5 минут назад)</span>
-        <p class="photo-block__message">Прыгать или нет? Напишите в комментарии свой ответ и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        <span class="photo-block__like">Нравится: 215</span>
+      <div class="panorama__comment">
+        <b class="panorama__name">Анна</b>
+        <span class="panorama__time">(5 минут назад)</span>
+        <p class="panorama__message">Прыгать или нет? Напишите в комментарии свой ответ и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <span class="panorama__like">Нравится: 215</span>
       </div>
     </div>
-    <div class="photo-block">
-      <div class="photo-block__img">
-        <img src="img/photo-1-mobile@1x.jpg" alt="img-2">
+    <div class="photos">
+      <div class="photo-block">
+        <div class="photo-block__img">
+          <img src="img/photo-1-mobile@1x.jpg" alt="img-2">
+        </div>
+        <div class="photo-block__comment">
+          <b class="photo-block__name">Левон</b>
+          <span class="photo-block__time">(5 часов назад)</span>
+          <p class="photo-block__message">Вчера он на луну летал, сегодня в руки к нам попал</p>
+          <span class="photo-block__like">Нравится: 356</span>
+        </div>
       </div>
-      <div class="photo-block__comment">
-        <b class="photo-block__name">Левон</b>
-        <span class="photo-block__time">(5 часов назад)</span>
-        <p class="photo-block__message">Вчера он на луну летал, сегодня в руки к нам попал</p>
-        <span class="photo-block__like">Нравится: 356</span>
+      <div class="photo-block">
+        <div class="photo-block__img">
+          <img src="img/photo-2-mobile@1x.jpg" alt="img-3">
+        </div>
+        <div class="photo-block__comment">
+          <b class="photo-block__name">Антон</b>
+          <span class="photo-block__time">(12 часов назад)</span>
+          <p class="photo-block__message">Соседи будут рады!</p>
+          <span class="photo-block__like">Нравится: 666</span>
+        </div>
       </div>
-    </div>
-    <div class="photo-block">
-      <div class="photo-block__img">
-        <img src="img/photo-2-mobile@1x.jpg" alt="img-3">
+      <div class="photo-block">
+        <div class="photo-block__img">
+          <img src="img/photo-3-mobile@1x.jpg" alt="img-4">
+        </div>
+        <div class="photo-block__comment">
+          <b class="photo-block__name">Борис</b>
+          <span class="photo-block__time">(20 часов назад)</span>
+          <p class="photo-block__message">Здесь могла быть ваша цитата о высоком и вечном</p>
+          <span class="photo-block__like">Нравится: 215</span>
+        </div>
       </div>
-      <div class="photo-block__comment">
-        <b class="photo-block__name">Антон</b>
-        <span class="photo-block__time">(12 часов назад)</span>
-        <p class="photo-block__message">Соседи будут рады!</p>
-        <span class="photo-block__like">Нравится: 666</span>
+      <div class="photo-block">
+        <div class="photo-block__img">
+          <img src="img/photo-4-mobile@1x.jpg" alt="img-5">
+        </div>
+        <div class="photo-block__comment">
+          <b class="photo-block__name">Сергей</b>
+          <span class="photo-block__time">(25 часов назад)</span>
+          <p class="photo-block__message">Самая кубанская в мире!</p>
+          <span class="photo-block__like">Нравится: 4</span>
+        </div>
       </div>
-    </div>
-    <div class="photo-block">
-      <div class="photo-block__img">
-        <img src="img/photo-3-mobile@1x.jpg" alt="img-4">
+      <div class="photo-block">
+        <div class="photo-block__img">
+          <img src="img/photo-5-mobile@1x.jpg" alt="img-6">
+        </div>
+        <div class="photo-block__comment">
+          <b class="photo-block__name">Максим</b>
+          <span class="photo-block__time">(40 часов назад)</span>
+          <p class="photo-block__message">Где снег-то?</p>
+          <span class="photo-block__like">Нравится: 150</span>
+        </div>
       </div>
-      <div class="photo-block__comment">
-        <b class="photo-block__name">Борис</b>
-        <span class="photo-block__time">(20 часов назад)</span>
-        <p class="photo-block__message">Здесь могла быть ваша цитата о высоком и вечном</p>
-        <span class="photo-block__like">Нравится: 215</span>
-      </div>
-    </div>
-    <div class="photo-block">
-      <div class="photo-block__img">
-        <img src="img/photo-4-mobile@1x.jpg" alt="img-5">
-      </div>
-      <div class="photo-block__comment">
-        <b class="photo-block__name">Сергей</b>
-        <span class="photo-block__time">(25 часов назад)</span>
-        <p class="photo-block__message">Самая кубанская в мире!</p>
-        <span class="photo-block__like">Нравится: 4</span>
-      </div>
-    </div>
-    <div class="photo-block">
-      <div class="photo-block__img">
-        <img src="img/photo-5-mobile@1x.jpg" alt="img-6">
-      </div>
-      <div class="photo-block__comment">
-        <b class="photo-block__name">Максим</b>
-        <span class="photo-block__time">(40 часов назад)</span>
-        <p class="photo-block__message">Где снег-то?</p>
-        <span class="photo-block__like">Нравится: 150</span>
-      </div>
-    </div>
-    <div class="photo-block">
-      <div class="photo-block__img">
-        <img src="img/photo-6-mobile@1x.jpg" alt="img-7">
-      </div>
-      <div class="photo-block__comment">
-        <b class="photo-block__name">Надежда</b>
-        <span class="photo-block__time">(45 часов назад)</span>
-        <p class="photo-block__message">Всем GM и взаимные лайки!</p>
-        <span class="photo-block__like">Нравится: 2560</span>
+      <div class="photo-block">
+        <div class="photo-block__img">
+          <img src="img/photo-6-mobile@1x.jpg" alt="img-7">
+        </div>
+        <div class="photo-block__comment">
+          <b class="photo-block__name">Надежда</b>
+          <span class="photo-block__time">(45 часов назад)</span>
+          <p class="photo-block__message">Всем GM и взаимные лайки!</p>
+          <span class="photo-block__like">Нравится: 2560</span>
+        </div>
       </div>
     </div>
     <p class="text-default">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
     <div class="photo-edit">
-      <img src="img/photo-7-mobile@1x.jpg" alt="picture">
-      <div class="photo-edit__tools">
-        <div class="photo-edit__tool1">1</div>
-        <div class="photo-edit__tool2">2</div>
-        <div class="photo-edit__tool3">3</div>
-        <div class="photo-edit__zoom"></div>
+      <div class="photo-edit__wrapper">
+        <div class="photo-edit__img">
+          <img src="img/photo-7-mobile@1x.jpg" alt="picture">
+        </div>
+        <div class="photo-edit__controls-wrapper">
+          <div class="photo-edit__tools">
+            <div class="photo-edit__tool1">1</div>
+            <div class="photo-edit__tool2">2</div>
+            <div class="photo-edit__tool3">3</div>
+            <div class="photo-edit__control"></div>
+          </div>
+          <div class="btn-wrapper">
+            <a class="post-btn btn-default" href="#">Запостить</a>
+            <a class="btn-non-active btn-default" href="#">Отмена</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="btn-wrapper">
-      <a class="post-btn btn-default" href="#">Запостить</a>
-      <a class="btn-non-active btn-default" href="#">Отмена</a>
     </div>
     <footer class="page-footer">
       <div class="image-logo">

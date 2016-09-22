@@ -11,30 +11,42 @@
       <div class="logo">
         <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="23">
       </div>
-      <nav class="main-nav  main-nav--closed">
-        <a class="main-nav__toggle" href="#">Меню</a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
-        </ul>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__toggle" href="#">Меню</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <h2 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-    <p class="page-descr">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <div class="page-title">
+      <h2 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </div>
+    <div class="page-descr">
+      <p class="page-descr__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    </div>
     <div class="contest-form">
       <form action="#" method="get">
         <div class="contest-form__full-name">
-          <label class="contest-form__label" for="surname">Фамилия:  </label>
-          <input class="contest-form__input" type="text" name="surmane" id="surname" placeholder="Укажите фамилию">
-          <label class="contest-form__label" for="name">Имя:</label>
-          <input class="contest-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя">
-          <label class="contest-form__label" for="patronymic">Отчество:  </label>
-          <input class="contest-form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          <div class="contest-form__full-name-wrapper">
+            <label class="contest-form__label" for="surname">Фамилия:  </label>
+            <input class="contest-form__input" type="text" name="surmane" id="surname" placeholder="Укажите фамилию">
+          </div>
+          <div class="contest-form__full-name-wrapper">
+            <label class="contest-form__label" for="name">Имя:</label>
+            <input class="contest-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя">
+          </div>
+          <div class="contest-form__full-name-wrapper">
+            <label class="contest-form__label" for="patronymic">Отчество:  </label>
+            <input class="contest-form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          </div>
         </div>
         <div class="contest-form__achievements">
-          <h3 class="contest-form__title">Ваши безбашенные <br> достижения в путешествии</h3>
+          <h3 class="contest-form__title">Ваши безбашенные  достижения в путешествии</h3>
           <ul class="contest-form__list">
             <li class="contest-form__list-item">
               <input class="contest-form__checkbox" type="checkbox" name="selfie-with-shark" id="shark" checked>
@@ -63,10 +75,15 @@
           </ul>
         </div>
         <div class="contest-form__contacts">
-          <label class="contest-form__label" for="phone">Номерок телефончика</label>
-          <input class="contest-form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+          <h3 class="contest-form__title">Контактная информация</h3>
+          <div class="contest-form__contacts-wrapper">
+            <label class="contest-form__label" for="phone">Номерок телефончика</label>
+            <input class="contest-form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="contest-form__contacts-wrapper">
             <label class="contest-form__label" for="email">Адресок почты</label>
-          <input class="contest-form__input" type="email" name="email" id="email" placeholder="Введите почту">
+            <input class="contest-form__input" type="email" name="email" id="email" placeholder="Введите почту">
+          </div>
         </div>
         <div class="contest-form__app">
           <h3 class="contest-form__title">С каким приложением путешествовали?</h3>
@@ -89,8 +106,10 @@
           <h3 class="contest-form__title">Опишите свои эмоции</h3>
           <textarea class="contest-form__textarea" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-        <button class="form-btn" type="submit" value="submit">Отправить форму</button>
-        <p class="contest-form__required"><span class="contest-form__star">*</span> - Обязательные поля</p>
+        <div class="contest-form__submit-area">
+          <button class="form-btn" type="submit" value="submit">Отправить форму</button>
+          <p class="contest-form__required"><span class="contest-form__star">*</span> - Обязательные поля</p>
+        </div>
       </form>
     </div>
     <div class="popup">
