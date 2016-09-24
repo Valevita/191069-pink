@@ -84,41 +84,31 @@
         </div>
       </div>
       <div class="price">
-        <table class="price__table">
-          <tr>
-            <th class="price__table-empty"></th>
-            <th class="price__table-header">
-              <p class="price__table-plan">База</p>
-              <p class="price__table-price">1,99 USD</p>
-            </th>
-            <th class="price__table-header">
-              <p class="price__table-plan">Стандарт</p>
-              <p class="price__table-price">3,99 USD</p>
-            </th>
-            <th class="price__table-header">
-              <p class="price__table-plan">Анлим</p>
-              <p class="price__table-price">9,99 USD</p>
-            </th>
-          </tr>
-          <tr>
-            <td class="price__table-row">Розовый фильтр</td>
-            <td class="price__table-row">+</td>
-            <td class="price__table-row">+</td>
-            <td class="price__table-row">+</td>
-          </tr>
-          <tr>
-            <td class="price__table-row">Смайлики</td>
-            <td class="price__table-row">-</td>
-            <td class="price__table-row">+</td>
-            <td class="price__table-row">+</td>
-          </tr>
-          <tr>
-            <td class="price__table-row">Комментарии</td>
-            <td class="price__table-row">-</td>
-            <td class="price__table-row">-</td>
-            <td class="price__table-row">+</td>
-          </tr>
-        </table>
+        <div class="price-table">
+          <ul class="price-table__column">
+            <li class="price-table__item">Розовый фильтр</li>
+            <li class="price-table__item">Смайлики</li>
+            <li class="price-table__item">Комментарии</li>
+          </ul>
+          <ul class="price-table__column">
+            <li class="price-table__item-header">База</li>
+            <li class="price-table__item">+</li>
+            <li class="price-table__item">-</li>
+            <li class="price-table__item">-</li>
+          </ul>
+          <ul class="price-table__column">
+            <li class="price-table__item-header">Стандарт</li>
+            <li class="price-table__item">+</li>
+            <li class="price-table__item">+</li>
+            <li class="price-table__item">-</li>
+          </ul>
+          <ul class="price-table__column">
+            <li class="price-table__item-header">Анлим</li>
+            <li class="price-table__item">+</li>
+            <li class="price-table__item">+</li>
+            <li class="price-table__item">+</li>
+          </ul>
+        </div>
         <div class="price__radiobuttons">
           <label class="price__label" for="plan-1">1</label>
           <input class="price__radio" type="radio" name="plan" value="plan-1" id="plan-1">

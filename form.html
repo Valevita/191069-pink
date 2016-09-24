@@ -47,8 +47,8 @@
             <input class="contest-form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
           </div>
         </div>
-        <div class="contest-form__achievements">
-          <h3 class="contest-form__title">Ваши безбашенные  достижения в путешествии</h3>
+        <fieldset class="contest-form__achievements">
+          <legend class="contest-form__title">Ваши безбашенные  достижения в путешествии</legend>
           <ul class="contest-form__list">
             <li class="contest-form__list-item">
               <input class="contest-form__checkbox" type="checkbox" name="selfie-with-shark" id="shark" checked>
@@ -75,20 +75,22 @@
               <label class="contest-form__label-checkbox" for="hotel">Разгромил отель</label>
             </li>
           </ul>
-        </div>
-        <div class="contest-form__contacts">
-          <h3 class="contest-form__title">Контактная информация</h3>
+        </fieldset>
+        <fieldset class="contest-form__contacts">
+          <legend class="contest-form__title">Контактная информация</legend>
           <div class="contest-form__contacts-wrapper">
             <label class="contest-form__label" for="phone">Номерок телефончика</label>
+            <label class="contest-form__label-double" for="phone">Номер телефона</label>
             <input class="contest-form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
           </div>
           <div class="contest-form__contacts-wrapper">
             <label class="contest-form__label" for="email">Адресок почты</label>
+            <label class="contest-form__label-double" for="email">Адрес почты</label>
             <input class="contest-form__input" type="email" name="email" id="email" placeholder="Введите почту">
           </div>
-        </div>
-        <div class="contest-form__app">
-          <h3 class="contest-form__title">С каким приложением путешествовали?</h3>
+        </fieldset>
+        <fieldset class="contest-form__app">
+          <legend class="contest-form__title">С каким приложением путешествовали?</legend>
           <ul class="contest-form__list">
             <li class="contest-form__list-item">
               <input class="contest-form__radio" type="radio" name="app" value="iOS" id="iOS" checked>
@@ -103,11 +105,11 @@
               <label class="contest-form__label-radio" for="windows">Windows Phone</label>
             </li>
           </ul>
-        </div>
-        <div class="contest-form__emotions">
-          <h3 class="contest-form__title">Опишите свои эмоции</h3>
+        </fieldset>
+        <fieldset class="contest-form__emotions">
+          <legend class="contest-form__title">Опишите свои эмоции</legend>
           <textarea class="contest-form__textarea" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
+        </fieldset>
         <div class="contest-form__submit-area">
           <button class="form-btn" type="submit" value="submit">Отправить форму</button>
           <p class="contest-form__required"><span class="contest-form__star">*</span> - Обязательные поля</p>

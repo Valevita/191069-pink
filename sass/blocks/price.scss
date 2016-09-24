@@ -5,90 +5,12 @@
   background-color: $grey-bg;
 }
 
-.price__table {
-  @include container;
-  border-collapse: collapse;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fff;
-}
 
-.price__table-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: $dark-blue;
-  border: 2px solid #e5e5e5;
-  text-align: center;
-}
-
-.price__table-empty {
-  display: none;
-}
-
-.price__table-header:not(:nth-child(3)) {
-  display: none;
-}
-
-.price__table-plan {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.price__table-price {
-  margin: 0;
-  font-size: 24px;
-  font-weight: lighter;
-  line-height: 30px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.price__table-row {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  border: 2px solid #e5e5e5;
-  font-size: 14px;
-  line-height: 30px;
-  color: $dark-blue;
-  text-transform: uppercase;
-}
-
-.price__table-row:not(:nth-child(1)) {
-  display: none;
-}
 
 .price__radiobuttons {
   text-align: center;
 }
 
 @media (min-width: 700px) {
-  .price__table-row:not(:nth-child(1)),
-  .price__table-header:not(:nth-child(3)),
-  .price__table-empty {
-    display: table-cell;
-  }
 
-  .price__table-empty {
-    background-color: $grey-bg;
-    border: 2px solid $grey-bg;
-  }
-
-  .price__table-row {
-    width: 25%;
-    text-transform: none;
-  }
-
-  .price__table-header {
-    width: 25%;
-  }
-
-  .price__radiobuttons {
-    display: none;
-  }
 }
