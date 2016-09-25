@@ -4,6 +4,8 @@
 }
 
 .main-info__text {
+  @include container;
+  margin-top: 40px;
   font-size: 24px;
   line-height: 24px;
   font-weight: lighter;
@@ -11,23 +13,129 @@
 }
 
 .main-info__features {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 325px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding-top: 55px;
   background-color: $grey-bg;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 400px;
+}
+
+.main-info__feature-item {
+  margin-top: 40px;
   text-align: center;
+}
+
+.main-info__feature-item:first-child {
+  margin-top: 0;
+}
+
+.main-info__features-wrapper {
+  box-sizing: border-box;
+  @include container;
 }
 
 .main-info__feature-item-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 18 px;
   line-height: 24px;
 }
 
 .main-info__feature-item-descr {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
+}
+
+.main-info__effect {
+  display: none;
+}
+
+.main-info__effect-wrapper {
+  @include container;
+  box-sizing: border-box;
+  padding-left: 310px;
+  padding-top: 50px;
+  padding-bottom: 67px;
+}
+
+.main-info__effect-title {
+  width: 170px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000;
+}
+
+.main-info__effect-descr {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main-info__effect-more {
+  font-size: 14px;
+  line-height: 24px;
+  color: $pink;
+}
+
+@media (min-width: 700px) {
+  .main-info__text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .main-info__text:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .main-info__feature-item {
+    width: 310px;
+    text-align: left;
+  }
+
+  .main-info__features-wrapper {
+    padding-left: 310px;
+  }
+
+  .main-info__effect {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .main-info__text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+
+  .main-info__features-wrapper {
+    padding-left: 0;
+    font-size: 0;
+  }
+
+  .main-info__feature-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 0;
+    margin-right: 20px;
+    padding-top: 360px;
+    text-align: center;
+  }
+
+  .main-info__feature-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .main-info__effect {
+    background-color: $grey-bg;
+  }
+
+  .main-info__effect-wrapper {
+    padding-left: 370px;
+    padding-top: 50px;
+  }
 }

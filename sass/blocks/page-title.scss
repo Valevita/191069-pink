@@ -1,13 +1,30 @@
 .page-title {
-  margin: 0;
   padding-top: 35px;
   padding-bottom: 53px;
-  padding-left: 20px;
-  padding-right: 20px;
   background: $dark-blue url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.page-title__text {
+  width: 280px;
+  margin: 0 auto;
   font-size: 24px;
   font-weight: lighter;
   line-height: 30px;
   color: #fff;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  .page-title__text {
+    width: 500px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-title__text {
+    width: 820px;
+  }
 }
