@@ -1,17 +1,13 @@
 .image-logo {
   width: 150px;
   height: 41px;
+  align-self: center;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
 @media (min-width: 700px) {
   .image-logo {
-    display: inline-block;
-    vertical-align: top;
     margin: 0;
   }
 }

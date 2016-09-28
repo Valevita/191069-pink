@@ -1,11 +1,62 @@
 .price-table {
+  overflow: hidden;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.price-table__wrapper {
   font-size: 0;
+  width: 300%;
+  transform: translateX(-260px);
+}
+
+.price-table__column {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 280px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.price-table__column:first-child {
+  display: none;
+}
+
+.price-table__item {
+  box-sizing: border-box;
+  min-height: 60px;
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  background-color: #fff;
+  color: $dark-blue;
+}
+
+.price-table__item-header {
+  box-sizing: border-box;
+  min-height: 60px;
+  background-color: $dark-blue;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 
 @media (min-width: 700px) {
   .price-table {
     @include container;
+    overflow: visible;
+    font-size: 0;
+  }
+
+  .price-table__wrapper {
+    @include container;
+    transform: none;
   }
 
   .price-table__column {
@@ -20,34 +71,35 @@
     line-height: 30px;
 }
 
-.price-table__column:first-child {
-  width: 25%;
-  border-left: 2px solid #e5e5e5;
-  border-top: 2px solid #e5e5e5;
-}
+  .price-table__column:first-child {
+    display: inline-block;
+    width: 25%;
+    border-left: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+  }
 
-.price-table__item-header {
-  box-sizing: border-box;
-  min-height: 60px;
-  background-color: $dark-blue;
-  border-top: 2px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
-  color: #fff;
-  text-transform: uppercase;
-}
+  .price-table__item-header {
+    box-sizing: border-box;
+    min-height: 60px;
+    background-color: $dark-blue;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    color: #fff;
+    text-transform: uppercase;
+  }
 
-.price-table__item-header:last-child {
-  border-right-style: none;
-}
+  .price-table__item-header:last-child {
+    border-right-style: none;
+  }
 
-.price-table__item {
-  box-sizing: border-box;
-  min-height: 60px;
-  border-bottom: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
-  background-color: #fff;
-  color: $dark-blue;
+  .price-table__item {
+    box-sizing: border-box;
+    min-height: 60px;
+    border-bottom: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    background-color: #fff;
+    color: $dark-blue;
 }
 
 }

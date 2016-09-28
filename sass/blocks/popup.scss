@@ -1,17 +1,56 @@
 .popup {
   display: none;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 290px;
+  padding-top: 45px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px #d5d5d5;
 }
 
 .popup__title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 24px;
   text-align: center;
 }
 
 .popup__text {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 14px;
   line-height: 24px;
   color: $dark-blue;
   text-align: center;
 }
+
+.popup__btn-bg-grey {
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: #f2f2f2;
+}
+
+.popup__btn-bg-white {
+  padding-top: 40px;
+  padding-bottom: 52px;
+  background-color: #fff;
+}
+
+@media (min-width: 700px) {
+  .popup {
+    width: 461px;
+  }
+
+  .popup__text {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popup--wide {
+    width: 780px;
+  }
+}
+
+
