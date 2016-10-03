@@ -1,5 +1,7 @@
 .panorama {
-  width: 320px;;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   margin: 20px auto;
   font-family: "Open Sans", "Arial", sans-serif;
 }
@@ -7,12 +9,13 @@
 .panorama__img {
   width: 320px;
   height: 137px;
+  align-self: center;
 }
 
 .panorama__comment {
   box-sizing: border-box;
   width: $width;
-  margin: 0 auto;
+  align-self: center;
   padding-left: 18px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -52,13 +55,9 @@
 
 @media (min-width: 700px) {
   .panorama {
-    width: 700px;
+    width: auto;
   }
 
-  .panorama__img {
-    width: 700px;
-    height: 509px;
-  }
 
   .panorama__comment {
     @include container;
@@ -67,12 +66,8 @@
 
 @media (min-width: 1200px) {
   .panorama {
-    width: 960px;
+    width: 100%;
   }
 
-  .panorama__img {
-    width: 960px;
-    height: 506px;
-  }
 }
 

@@ -50,6 +50,7 @@
     font-size: 20px;
     transform: translateY(120px);
   }
+
 }
 
 @media (min-width: 1200px) {
@@ -57,5 +58,9 @@
     width: 700px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .review-block__radiobuttons {
+    display: none;
   }
 }

@@ -4,29 +4,40 @@
 }
 
 .photo-edit__wrapper {
+  display: flex;
+  flex-direction: column;
   @include container;
+}
+
+.photo-edit__controls-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .photo-edit__img {
   width: 280px;
   height: 374px;
-  margin: 0 auto;
+  align-self: center;
 }
 
 @media (min-width: 700px) {
   .photo-edit__wrapper {
-    @include clearfix;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .photo-edit__img {
-    float: left;
     width: 300px;
     height: 400px;
 
   }
 
   .photo-edit__controls-wrapper {
-    float: right;
+    width: 300px;
+  }
+
+  .photo-edit__tools {
     width: 300px;
   }
 }
@@ -41,6 +52,12 @@
   }
 
   .photo-edit__controls-wrapper {
+    width: 410px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: space-between;
     width: 410px;
   }
 }
