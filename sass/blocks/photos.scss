@@ -1,4 +1,13 @@
 .photos {
   @include container;
-  font-size: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

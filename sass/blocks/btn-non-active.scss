@@ -2,3 +2,10 @@
   color: #dddfe0;
   border: 3px solid #dddfe0;
 }
+
+@media (min-width: 1200px) {
+  .btn-non-active {
+    width: 183px;
+    margin: 0;
+  }
+}

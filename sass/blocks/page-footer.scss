@@ -1,7 +1,8 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
   @include container;
-  font-size: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .page-footer--no-display {
@@ -10,7 +11,7 @@
 
 .page-footer__copyright {
   width: 150px;
-  margin: 0 auto;
+  align-self: center;
   min-height: 36px;
   padding-top: 5px;
   text-align: center;
@@ -27,16 +28,16 @@
 
 @media (min-width: 700px) {
   .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 70px;
   }
 
   .page-footer--no-display {
-    display: block;
+    display: flex;
   }
 
   .page-footer__copyright {
-    display: inline-block;
-    vertical-align: top;
     text-align: right;
   }
 }

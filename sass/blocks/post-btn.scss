@@ -3,3 +3,10 @@
   color: $pink;
   border: 3px solid $pink;
 }
+
+@media (min-width: 1200px) {
+  .post-btn {
+    width: 183px;
+    margin: 0;
+  }
+}

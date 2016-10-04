@@ -3,3 +3,9 @@
   border: none;
   outline: none;
 }
+
+@media (min-width: 700px) {
+  .form-btn {
+    margin: 0;
+  }
+}

@@ -1,6 +1,6 @@
 .price {
   margin-bottom: 20px;
-  padding-top: 67px;
+  padding-top: 20px;
   padding-bottom: 40px;
   background-color: $grey-bg;
 }
@@ -12,5 +12,7 @@
 }
 
 @media (min-width: 700px) {
-
+  .price__radiobuttons {
+    display: none;
+  }
 }
