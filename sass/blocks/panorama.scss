@@ -53,9 +53,15 @@
   color: $pink;
 }
 
+
 @media (min-width: 700px) {
   .panorama {
     width: auto;
+  }
+
+  .panorama__img {
+    width: 700px;
+    height: 509px;
   }
 
 
@@ -65,8 +71,10 @@
 }
 
 @media (min-width: 1200px) {
-  .panorama {
-    width: 100%;
+
+  .panorama__img {
+    width: 1200px;
+    height: 506px;
   }
 
 }

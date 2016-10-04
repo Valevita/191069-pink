@@ -8,18 +8,23 @@
   </head>
   <body class="body">
     <header class="main-header">
-     <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__short-menu  main-nav__short-menu--closed">
-            <div class="logo">
-              <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="23">
-            </div>
-            <a class="main-nav__toggle" href="#">Меню</a>
+      <div class="main-header__short-menu-wrapper  main-header__short-menu-wrapper--closed">
+        <div class="main-header__short-menu">
+          <div class="logo">
+            <picture>
+              <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg">
+            </picture>
           </div>
+          <a class="main-header__toggle--open" href="#">Меню</a>
+        </div>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
           </ul>
         </div>
@@ -29,21 +34,22 @@
       <div class="hero-area">
         <div class="hero-area__wrapper">
           <p class="hero-area__message">Взгляните <br> на жизнь  иначе!</p>
-          <div class="intro"></div>
-          <div class="download">
-            <a class="btn-default download-btn" href="#">Скачать приложение</a>
-            <div class="download__os">
-              <a class="download__apple" href="#">Apple</a>
-              <a class="download__android" href="#">Android</a>
-              <a class="download__windows" href="#">Windows</a>
-            </div>
-            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
         </div>
       </div>
+      <div class="download">
+        <a class="btn-default download-btn" href="#">Скачать приложение</a>
+        <div class="download__os">
+          <a class="download__apple" href="#">Apple</a>
+          <a class="download__android" href="#">Android</a>
+          <a class="download__windows" href="#">Windows</a>
+        </div>
+        <p class="download__text">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8</p>
+      </div>
       <div class="main-info">
+        <div class="main-info__text-wrapper">
         <p class="main-info__text">Устали от серости мегаполиса?</p>
         <p class="main-info__text">Нам есть, что вам <br> предложить!</p>
+        </div>
         <div class="main-info__features">
           <div class="main-info__features-wrapper">
             <div class="main-info__feature-item">
@@ -69,18 +75,20 @@
         </div>
       </div>
       <div class="review-block">
-        <div class="review-block__item">
-          <b class="review-block__item-name">Николай Петров</b>
-          <p class="review-block__item-name-descr">25 лет, водитель трамвая</p>
-          <p class="review-block__item-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-        </div>
-        <div class="review-block__radiobuttons">
-          <label class="review-block__label" for="review-1">1</label>
-          <input class="review-block__radio" type="radio" name="review" value="review-1" id="review-1" checked>
-          <label class="review-block__label" for="review-2">2</label>
-          <input class="review-block__radio" type="radio" name="review" value="review-2" id="review-2">
-          <label class="review-block__label" for="review-3">3</label>
-          <input class="review-block__radio" type="radio" name="review" value="review-3" id="review-3">
+        <div class="review-block__wrapper">
+          <div class="review-block__item">
+            <b class="review-block__item-name">Николай Петров</b>
+            <p class="review-block__item-name-descr">25 лет, водитель трамвая</p>
+            <p class="review-block__item-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"  </p>
+          </div>
+          <div class="review-block__radiobuttons">
+            <label class="review-block__label" for="review-1">1</label>
+            <input class="review-block__radio" type="radio" name="review" value="review-1" id="review-1" checked>
+            <label class="review-block__label" for="review-2">2</label>
+            <input class="review-block__radio" type="radio" name="review" value="review-2" id="review-2">
+            <label class="review-block__label" for="review-3">3</label>
+            <input class="review-block__radio" type="radio" name="review" value="review-3" id="review-3">
+          </div>
         </div>
       </div>
       <div class="price">
@@ -92,22 +100,22 @@
             <li class="price-table__item">Комментарии</li>
           </ul>
           <ul class="price-table__column">
-            <li class="price-table__item-header">База</li>
-            <li class="price-table__item">+</li>
-            <li class="price-table__item">-</li>
-            <li class="price-table__item">-</li>
+            <li class="price-table__item-header"><span class="price-table__item-header-type">База</span> <span class="price-table__item-header-price">1,99 USD</span></li>
+            <li class="price-table__item  price-table__item--yes"></li>
+            <li class="price-table__item  price-table__item--no"></li>
+            <li class="price-table__item  price-table__item--no"></li>
           </ul>
           <ul class="price-table__column">
-            <li class="price-table__item-header">Стандарт</li>
-            <li class="price-table__item">+</li>
-            <li class="price-table__item">+</li>
-            <li class="price-table__item">-</li>
+            <li class="price-table__item-header  price-table__item-header--hit"><span class="price-table__item-header-type">Стандарт</span> <span class="price-table__item-header-price">3,99 USD</span></li>
+            <li class="price-table__item  price-table__item--yes"></li>
+            <li class="price-table__item  price-table__item--yes"></li>
+            <li class="price-table__item  price-table__item--no"></li>
           </ul>
           <ul class="price-table__column">
-            <li class="price-table__item-header">Анлим</li>
-            <li class="price-table__item">+</li>
-            <li class="price-table__item">+</li>
-            <li class="price-table__item">+</li>
+            <li class="price-table__item-header"><span class="price-table__item-header-type">Анлим</span><span class="price-table__item-header-price">9,99 USD</span></li>
+            <li class="price-table__item  price-table__item--yes"></li>
+            <li class="price-table__item  price-table__item--yes"></li>
+            <li class="price-table__item  price-table__item--yes"></li>
           </ul>
           </div>
         </div>
@@ -137,7 +145,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" alt="map">
+
         </div>
       </div>
     </main>
@@ -146,9 +154,9 @@
         <img src="img/logo-pink-blue-mobile.svg" alt="pink-logo">
       </div>
       <div class="social">
-        <a class="social__item" href="#">Twitter</a>
-        <a class="social__item" href="#">Facebook</a>
-        <a class="social__item" href="#">Video</a>
+        <a class="social__item  social__item--twitter" href="#">Twitter</a>
+        <a class="social__item  social__item--facebook" href="#">Facebook</a>
+        <a class="social__item  social__item--youtube" href="#">Video</a>
       </div>
       <div class="page-footer__copyright">
         <span class="page-footer__developed">Разработано</span>

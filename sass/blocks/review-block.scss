@@ -1,11 +1,15 @@
 .review-block {
-  @include container;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
   background-color: #fff;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
   color: $dark-blue;
 }
 
 .review-block__item {
+  @include container;
   text-align: center;
 }
 
@@ -54,6 +58,39 @@
 }
 
 @media (min-width: 1200px) {
+  .review-block {
+    padding-top: 140px;
+    background-image: url("../img/icon-quotes.svg"),
+      url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: center 30px, bottom;
+    background-size: 77px 64px, 100%;
+  }
+
+  .review-block__wrapper {
+    @include container;
+    position: relative;
+  }
+
+  .review-block__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    width: 24px;
+    height: 41px;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat;
+  }
+
+  .review-block__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 24px;
+    height: 41px;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat;
+  }
+
   .review-block__item-content {
     width: 700px;
     margin-left: auto;

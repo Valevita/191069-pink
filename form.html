@@ -8,18 +8,25 @@
   </head>
   <body class="body">
     <header class="main-header">
-     <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__short-menu  main-nav__short-menu--closed">
-            <div class="logo">
-              <img src="img/logo-pink-white-mobile.svg" alt="pink-logo" width="75" height="23">
-            </div>
-            <a class="main-nav__toggle" href="#">Меню</a>
+      <div class="main-header__short-menu-wrapper  main-header__short-menu-wrapper--closed">
+        <div class="main-header__short-menu">
+          <div class="logo">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg">
+              </picture>
+            </a>
           </div>
+          <a class="main-header__toggle--open" href="#">Меню</a>
+        </div>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
           </ul>
         </div>
@@ -88,11 +95,13 @@
                 <label class="contest-form__label" for="phone">Номерок телефончика</label>
                 <label class="contest-form__label-double" for="phone">Номер телефона</label>
                 <input class="contest-form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                <div class="contest-form__icon-phone"></div>
               </div>
               <div class="contest-form__contacts-wrapper">
                 <label class="contest-form__label" for="email">Адресок почты</label>
                 <label class="contest-form__label-double" for="email">Адрес почты</label>
                 <input class="contest-form__input" type="email" name="email" id="email" placeholder="Введите почту">
+                <div class="contest-form__icon-email"></div>
               </div>
             </div>
           </fieldset>
@@ -147,9 +156,9 @@
         <img src="img/logo-pink-blue-mobile.svg" alt="pink-logo">
       </div>
       <div class="social">
-        <a class="social__item" href="#">Twitter</a>
-        <a class="social__item" href="#">Facebook</a>
-        <a class="social__item" href="#">Video</a>
+        <a class="social__item  social__item--twitter" href="#">Twitter</a>
+        <a class="social__item  social__item--facebook" href="#">Facebook</a>
+        <a class="social__item  social__item--youtube" href="#">Video</a>
       </div>
       <div class="page-footer__copyright">
         <span class="page-footer__developed">Разработано</span>
