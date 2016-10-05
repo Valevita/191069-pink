@@ -33,6 +33,17 @@
   color: $pink;
 }
 
+.contact__item-email {
+  &:hover {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+}
+
 .contacts__map {
   width: 100%;
   height: 200px;

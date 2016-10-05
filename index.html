@@ -8,21 +8,22 @@
   </head>
   <body class="body">
     <header class="main-header">
-      <div class="main-header__short-menu-wrapper  main-header__short-menu-wrapper--closed">
+      <div class="main-header__short-menu-wrapper">
         <div class="main-header__short-menu">
           <div class="logo">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
               <img src="img/logo-pink-white-mobile.svg">
             </picture>
           </div>
-          <a class="main-header__toggle--open" href="#">Меню</a>
+          <a class="main-header__toggle  main-header__toggle--closed" href="#">Меню</a>
         </div>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav  main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
@@ -79,53 +80,55 @@
           <div class="review-block__item">
             <b class="review-block__item-name">Николай Петров</b>
             <p class="review-block__item-name-descr">25 лет, водитель трамвая</p>
-            <p class="review-block__item-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"  </p>
+            <p class="review-block__item-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!" </p>
+            <a class="review-block__arrow-left" href="#"></a>
+            <a class="review-block__arrow-right" href="#"></a>
           </div>
           <div class="review-block__radiobuttons">
-            <label class="review-block__label" for="review-1">1</label>
             <input class="review-block__radio" type="radio" name="review" value="review-1" id="review-1" checked>
-            <label class="review-block__label" for="review-2">2</label>
+            <label class="review-block__label" for="review-1"></label>
             <input class="review-block__radio" type="radio" name="review" value="review-2" id="review-2">
-            <label class="review-block__label" for="review-3">3</label>
+            <label class="review-block__label" for="review-2"></label>
             <input class="review-block__radio" type="radio" name="review" value="review-3" id="review-3">
+            <label class="review-block__label" for="review-3"></label>
           </div>
         </div>
       </div>
       <div class="price">
         <div class="price-table">
           <div class="price-table__wrapper">
-          <ul class="price-table__column">
-            <li class="price-table__item">Розовый фильтр</li>
-            <li class="price-table__item">Смайлики</li>
-            <li class="price-table__item">Комментарии</li>
-          </ul>
-          <ul class="price-table__column">
-            <li class="price-table__item-header"><span class="price-table__item-header-type">База</span> <span class="price-table__item-header-price">1,99 USD</span></li>
-            <li class="price-table__item  price-table__item--yes"></li>
-            <li class="price-table__item  price-table__item--no"></li>
-            <li class="price-table__item  price-table__item--no"></li>
-          </ul>
-          <ul class="price-table__column">
-            <li class="price-table__item-header  price-table__item-header--hit"><span class="price-table__item-header-type">Стандарт</span> <span class="price-table__item-header-price">3,99 USD</span></li>
-            <li class="price-table__item  price-table__item--yes"></li>
-            <li class="price-table__item  price-table__item--yes"></li>
-            <li class="price-table__item  price-table__item--no"></li>
-          </ul>
-          <ul class="price-table__column">
-            <li class="price-table__item-header"><span class="price-table__item-header-type">Анлим</span><span class="price-table__item-header-price">9,99 USD</span></li>
-            <li class="price-table__item  price-table__item--yes"></li>
-            <li class="price-table__item  price-table__item--yes"></li>
-            <li class="price-table__item  price-table__item--yes"></li>
-          </ul>
+            <ul class="price-table__column">
+              <li class="price-table__item">Розовый фильтр</li>
+              <li class="price-table__item">Смайлики</li>
+              <li class="price-table__item">Комментарии</li>
+            </ul>
+            <ul class="price-table__column">
+              <li class="price-table__item-header"><span class="price-table__item-header-type">База</span>   <span class="price-table__item-header-price">1,99 USD</span></li>
+              <li class="price-table__item  price-table__item--yes"></li>
+              <li class="price-table__item  price-table__item--no"></li>
+              <li class="price-table__item  price-table__item--no"></li>
+            </ul>
+            <ul class="price-table__column">
+              <li class="price-table__item-header  price-table__item-header--hit"><span class="price-table__item-header-type">Стандарт</span> <span class="price-table__item-header-price">3,99 USD</span></li>
+              <li class="price-table__item  price-table__item--yes"></li>
+              <li class="price-table__item  price-table__item--yes"></li>
+              <li class="price-table__item  price-table__item--no"></li>
+            </ul>
+            <ul class="price-table__column">
+              <li class="price-table__item-header"><span class="price-table__item-header-type">Анлим</span>  <span class="price-table__item-header-price">9,99 USD</span></li>
+              <li class="price-table__item  price-table__item--yes"></li>
+              <li class="price-table__item  price-table__item--yes"></li>
+              <li class="price-table__item  price-table__item--yes"></li>
+            </ul>
           </div>
         </div>
         <div class="price__radiobuttons">
-          <label class="price__label" for="plan-1">1</label>
           <input class="price__radio" type="radio" name="plan" value="plan-1" id="plan-1">
-          <label class="price__label" for="plan-2">2</label>
+          <label class="price__label" for="plan-1"></label>
           <input class="price__radio" type="radio" name="plan" value="plan-2" id="plan-2" checked>
-          <label class="price__label" for="plan-3">3</label>
+          <label class="price__label" for="plan-2"></label>
           <input class="price__radio" type="radio" name="plan" value="plan-3" id="plan-3">
+          <label class="price__label" for="plan-3"></label>
         </div>
       </div>
       <div class="contacts">
@@ -137,7 +140,7 @@
           </div>
           <div class="contacts__item">
             <span class="contacts__item-header">Пишите:</span>
-            <span class="contacts__item-content">mail@htmlacademy.ru</span>
+            <a class="contacts__item-content  contact__item-email" href="#"> mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__item">
             <span class="contacts__item-header">Приезжайте в гости:</span>
@@ -145,13 +148,15 @@
           </div>
         </div>
         <div class="contacts__map">
-
         </div>
       </div>
     </main>
     <footer class="page-footer page-footer--no-display">
       <div class="image-logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="pink-logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg">
+        </picture>
       </div>
       <div class="social">
         <a class="social__item  social__item--twitter" href="#">Twitter</a>
@@ -165,5 +170,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

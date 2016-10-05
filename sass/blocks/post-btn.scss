@@ -2,6 +2,15 @@
   margin-bottom: 9px;
   color: $pink;
   border: 3px solid $pink;
+
+  &:hover {
+    background-color: $pink;
+    color: #fff;
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+  }
 }
 
 @media (min-width: 1200px) {

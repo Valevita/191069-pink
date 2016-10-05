@@ -8,25 +8,26 @@
   </head>
   <body class="body">
     <header class="main-header">
-      <div class="main-header__short-menu-wrapper  main-header__short-menu-wrapper--closed">
+      <div class="main-header__short-menu-wrapper">
         <div class="main-header__short-menu">
           <div class="logo">
             <a href="index.html">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
                 <img src="img/logo-pink-white-mobile.svg">
               </picture>
             </a>
           </div>
-          <a class="main-header__toggle--open" href="#">Меню</a>
+          <a class="main-header__toggle  main-header__toggle--closed" href="#">Меню</a>
         </div>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
           </ul>
         </div>
@@ -60,7 +61,7 @@
               <legend class="contest-form__title">Ваши безбашенные  достижения в путешествии</legend>
               <div class="contest-form__achievements-content">
                 <ul class="contest-form__list">
-                    <li class="contest-form__list-item">
+                  <li class="contest-form__list-item">
                     <input class="contest-form__checkbox" type="checkbox" name="selfie-with-shark" id="shark" checked>
                     <label class="contest-form__label-checkbox" for="shark">Сделал селфи с акулой</label>
                   </li>
@@ -153,7 +154,10 @@
     </div>
     <footer class="page-footer">
       <div class="image-logo">
-        <img src="img/logo-pink-blue-mobile.svg" alt="pink-logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg">
+        </picture>
       </div>
       <div class="social">
         <a class="social__item  social__item--twitter" href="#">Twitter</a>
@@ -167,5 +171,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

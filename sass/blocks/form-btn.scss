@@ -1,7 +1,31 @@
 .form-btn {
-  @include button;
+  display: block;
+  box-sizing: border-box;
+  width: $width;
+  height: 63px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background-color: #2aab6d;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
   border: none;
   outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: 700px) {
