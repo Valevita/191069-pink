@@ -2,23 +2,44 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .panorama__img {
+  position: relative;
   width: 320px;
   height: 137px;
   align-self: center;
 }
 
+.panorama__day {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  box-sizing: border-box;
+  padding-top: 7px;
+  width: 140px;
+  height: 36px;
+  background-color: $pink;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .panorama__comment {
+  position: relative;
   box-sizing: border-box;
   width: $width;
   align-self: center;
   padding-left: 18px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   background-color: $grey-bg;
 }
 
@@ -46,17 +67,30 @@
 }
 
 .panorama__like {
+  display: inline-block;
   font-size: 12px;
   line-height: 24px;
   font-weight: lighter;
   text-transform: uppercase;
   color: $pink;
+  transform: translateX(32px);
+}
+
+.panorama__like-img {
+  position: absolute;
+  left: 18px;
+  bottom: 27px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
 }
 
 
 @media (min-width: 700px) {
   .panorama {
     width: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 
   .panorama__img {
@@ -64,9 +98,31 @@
     height: 509px;
   }
 
+  .panorama__day {
+    top: 57px;
+    right: 40px;
+
+  }
+
 
   .panorama__comment {
     @include container;
+    padding-left: 27px;
+    padding-top: 25px;
+    padding-bottom: 14px;
+  }
+
+  .panorama__like {
+    position: absolute;
+    top: 25px;
+    right: 93px;
+
+  }
+
+  .panorama__like-img {
+    right: 29px;
+    top: 30px;
+    left: auto;
   }
 }
 
@@ -75,6 +131,19 @@
   .panorama__img {
     width: 1200px;
     height: 506px;
+  }
+
+  .panorama__day {
+    top: 54px;
+    right: 130px;
+  }
+
+  .panorama__like {
+    right: 96px;
+  }
+
+  .panorama__like-img {
+    right: 32px;
   }
 
 }

@@ -1,5 +1,5 @@
 .social {
-  margin-bottom: 45px;
+  margin-bottom: 33px;
   text-align: center;
   font-size: 0;
 }
@@ -43,6 +43,7 @@
 @media (min-width: 700px) {
   .social {
     margin: 0;
+    align-self: flex-start;
   }
 }
 

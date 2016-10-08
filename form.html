@@ -5,39 +5,40 @@
     <title>HTML Academy: Пинк</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body class="body">
     <header class="main-header">
-      <div class="main-header__short-menu-wrapper">
-        <div class="main-header__short-menu">
-          <div class="logo">
-            <a href="index.html">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg">
-              </picture>
-            </a>
-          </div>
-          <a class="main-header__toggle  main-header__toggle--closed" href="#">Меню</a>
-        </div>
-      </div>
-      <nav class="main-nav main-nav--nojs">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Html Academy</a></li>
-          </ul>
-        </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item-menu">
+            <div class="logo">
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img src="img/logo-pink-white-mobile.svg">
+                </picture>
+              </a>
+            </div>
+            <a class="main-nav__toggle  main-nav__toggle--closed" href="#">Меню</a>
+          </li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item "><a class="main-nav__link main-nav__link--active" >Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Html&nbsp;Academy</a></li>
+        </ul>
       </nav>
     </header>
     <div class="page-title">
-      <h2 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <h2 class="page-title__text">Конкурс на самое безбашеное путешествие с Пинк</h2>
     </div>
     <div class="page-descr">
-      <p class="page-descr__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="page-descr__additional-text">Пожалуйста, заполните форму ниже:</span></p>
+      <p class="page-descr__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту! <span class="page-descr__additional-text">Пожалуйста, заполните форму ниже:</span></p>
     </div>
     <div class="contest-form">
       <form action="#" method="get">
@@ -111,15 +112,15 @@
               <legend class="contest-form__title">С каким приложением путешествовали?</legend>
               <div class="contest-form__app-content">
                 <ul class="contest-form__list">
-                  <li class="contest-form__list-item">
+                  <li class="contest-form__list-item  contest-form__list-item--radio">
                     <input class="contest-form__radio" type="radio" name="app" value="iOS" id="iOS" checked>
                     <label class="contest-form__label-radio" for="iOS">Pink для iOS</label>
                   </li>
-                  <li class="contest-form__list-item">
+                  <li class="contest-form__list-item  contest-form__list-item--radio">
                     <input class="contest-form__radio" type="radio" name="app" value="android" id="android">
                     <label class="contest-form__label-radio" for="android">Pink на Android</label>
                   </li>
-                  <li class="contest-form__list-item">
+                  <li class="contest-form__list-item  contest-form__list-item--radio">
                     <input class="contest-form__radio" type="radio" name="app" value="windows" id="windows">
                     <label class="contest-form__label-radio" for="windows">Windows Phone</label>
                   </li>
@@ -132,8 +133,8 @@
             <textarea class="contest-form__textarea" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="contest-form__submit-area">
-            <button class="form-btn" type="submit" value="submit">Отправить форму</button>
-            <p class="contest-form__required"><span class="contest-form__star">*</span> - Обязательные <span class="contest-form__required-additional">для заполнения</span> поля</p>
+            <button class="form-btn form-btn--in-progress" type="submit" value="submit">Отправить форму</button>
+            <p class="contest-form__required"><span class="contest-form__star">*</span> &mdash; Обязательные <span class="contest-form__required-additional">для заполнения</span> поля</p>
           </div>
         </div>
       </form>
@@ -167,7 +168,9 @@
       <div class="page-footer__copyright">
         <span class="page-footer__developed">Разработано</span>
         <a class="html-academy-logo" href="#">
-          <img src="img/logo-htmlacademy.svg" alt="html-academy-logo">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path fill="#d22856" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
         </a>
       </div>
     </footer>

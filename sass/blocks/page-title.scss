@@ -1,9 +1,9 @@
 .page-title {
   box-sizing: border-box;
   min-height: 237px;
-  padding-top: 90px;
-  background: $dark-blue url("../img/bg-back-mobile@1x.jpg") no-repeat top;
-  background-size: cover;
+  padding-top: 97px;
+  background: $dark-blue url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+
 }
 
 .page-title__text {
@@ -19,7 +19,7 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-title {
-    background: $dark-blue url("../img/bg-back-mobile@2x.jpg") no-repeat top;
+    background: $dark-blue url("../img/bg-back-mobile@2x.jpg") no-repeat center top;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   .page-title__text {
-    width: 820px;
+
   }
 }
 

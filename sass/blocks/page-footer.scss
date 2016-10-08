@@ -20,7 +20,7 @@
 .page-footer__developed {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 11px;
   font-size: 14px;
   line-height: 18px;
   color: $dark-blue;
@@ -30,7 +30,7 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   .page-footer--no-display {
@@ -39,6 +39,22 @@
 
   .page-footer__copyright {
     text-align: right;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .page-footer {
+    margin-top: 100px;
+  }
+
+  .page-footer__copyright {
+    width: 152px;
+  }
+
+  .page-footer__developed {
+    margin-right: 7px;
+    font-size: 18px;
   }
 }
 

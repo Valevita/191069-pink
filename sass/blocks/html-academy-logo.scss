@@ -1,4 +1,14 @@
 .html-academy-logo {
   display: inline-block;
   vertical-align: middle;
+  width: 27px;
+  height: 34px;
+}
+
+.html-academy-logo:hover path {
+  fill: rgb(40, 54, 69);
+}
+
+.html-academy-logo:active path {
+  fill: rgba(40, 54, 69, 0.3);
 }

@@ -1,13 +1,17 @@
 (function () {
   "use strict";
-  var link = document.querySelector(".main-header__toggle");
-  var menu = document.querySelector(".main-nav");
-  var shortmenu = document.querySelector(".main-header__short-menu-wrapper");
+  var link = document.querySelector(".main-nav__toggle");
+  var menu = document.querySelectorAll(".main-nav__item:not(:first-child)");
+  var shortmenu = document.querySelector(".main-header");
+
 
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    menu.classList.toggle("main-nav--closed");
-    link.classList.toggle("main-header__toggle--closed");
-    shortmenu.classList.toggle("main-header__short-menu-wrapper--closed");
+    menu.forEach(function (item) {
+      item.classList.toggle("main-nav__item--closed");
+    });
+    link.classList.toggle("main-nav__toggle--closed");
+    shortmenu.classList.toggle("main-header--closed");
+
   });
 }());

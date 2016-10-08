@@ -96,6 +96,13 @@
   font-weight: lighter;
 }
 
+.price-table__mobile-text {
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
 
 @media (min-width: 700px) {
   .price-table {
@@ -182,6 +189,10 @@
   .price-table__item--yes {
     background: #fff url("../img/icon-yes.svg") no-repeat center;
     background-size: 31px auto;
+  }
+
+  .price-table__mobile-text {
+    display: none;
   }
 
 }
