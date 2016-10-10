@@ -215,6 +215,7 @@
 @media (min-width: 1200px) {
   .photo-edit {
     @include container;
+    margin-bottom: 100px;
   }
 
   .photo-edit__wrapper {

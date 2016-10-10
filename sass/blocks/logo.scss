@@ -3,10 +3,33 @@
   height: 22px;
 }
 
+
+.logo__svg .logo__letter {
+  transform: translate(-72px, -17px);
+}
+
+.logo__svg:hover path {
+  fill: #d22856;
+}
+
+.logo__svg:active path {
+  fill: #fff;
+  opacity: 0.3;
+}
+
+.logo__svg:active path.logo__stars {
+  fill: #d22856;
+  opacity: 0.3;
+}
+
 @media (min-width: 700px) {
   .logo {
     width: 147px;
     height: 40px;
+  }
+
+  .logo__svg .logo__letter {
+    transform: translate(0, 0);
   }
 }
 

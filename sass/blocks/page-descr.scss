@@ -38,14 +38,14 @@
 
 @media (min-width: 1200px) {
   .page-descr {
-    padding-bottom: 89px;
+    padding-bottom: 90px;
   }
 
   .page-descr__text {
-    width: 600px;
+    width: 760px;
   }
 
   .page-descr__text br {
-    display: none;
+    display: block;
   }
 }
