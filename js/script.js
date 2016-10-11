@@ -5,14 +5,13 @@
   var menu = document.querySelectorAll(".main-nav__item:not(:first-child)");
   var shortmenu = document.querySelector(".main-header");
 
-  link.addEventListener("click", function (event) {
+   link.addEventListener("click", function (event) {
     event.preventDefault();
-    menu.forEach(function (item) {
-      item.classList.toggle("main-nav__item--closed");
-    });
+    for (var i = 0; i < menu.length; i ++) {
+       menu[i].classList.toggle("main-nav__item--closed");
+    }
     link.classList.toggle("main-nav__toggle--closed");
     shortmenu.classList.toggle("main-header--closed");
-
   });
 
   // Form button and popups
@@ -27,6 +26,9 @@
   };
 
   var enableFormBtn = function() {
+    if(!form_btn) {
+      return false;
+    }
     form_btn.removeAttribute("disabled");
     form_btn.addEventListener(
       "click",

@@ -91,6 +91,11 @@
 
 
 @media (min-width: 700px) {
+
+  .main-nav__item {
+    padding-bottom: 15px;
+  }
+
   .main-nav__item-menu {
     @include container;
     min-height: 110px;

@@ -414,6 +414,16 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   display: none;
 }
 
+::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 
 
 @media (min-width: 700px) {
