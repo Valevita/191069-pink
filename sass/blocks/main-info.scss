@@ -106,9 +106,12 @@
   color: $pink;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (max-width: 320px) and (min-resolution: 144dpi),
+       (max-width: 320px) and (min-resolution: 1.5dppx) {
   .main-info__features-wrapper {
     background: url("../img/iphone-screen-mobile@2x.png") no-repeat;
+    background-position: center 425px;
+    background-size: 157px auto;
 
   }
 }
@@ -200,7 +203,9 @@
 
 @media (min-width: 700px) and (min-resolution: 144dpi), (min-width: 700px) and (min-resolution: 1.5dppx) {
     .main-info__features-wrapper {
-      background: url("../img/iphone-screen-3-tablet@2x.png");
+      background: url("../img/iphone-screen-3-tablet@2x.png") no-repeat;
+      background-position: left 25px;
+      background-size: 268px auto;
     }
 }
 

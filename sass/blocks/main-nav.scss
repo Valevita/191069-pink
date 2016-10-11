@@ -108,7 +108,8 @@
 @media (min-width: 1200px) {
   .main-nav__list {
     display: flex;
-    @include container;
+    width: 940px;
+    margin: 0 auto;
     min-height: 110px;
     flex-direction: row;
     justify-content: space-between;

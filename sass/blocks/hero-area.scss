@@ -28,13 +28,15 @@
   text-align: center;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (max-width: 320px) and (min-resolution: 144dpi),
+       (max-width: 320px) and (min-resolution: 1.5dppx) {
   .hero-area {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 
   .hero-area__wrapper {
     background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
   }
 }
 
@@ -80,6 +82,7 @@
 
   .hero-area__wrapper {
     background-image: url("../img/iphone-hand-tablet@2x.png");
+    background-size: 700px auto;
 
   }
 }

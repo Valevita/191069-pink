@@ -148,7 +148,8 @@ input[type="radio"]:checked + .review-block__label::before {
   }
 
   .review-block__wrapper {
-    @include container;
+    width: 940px;
+    margin: 0 auto;
     position: relative;
   }
 
