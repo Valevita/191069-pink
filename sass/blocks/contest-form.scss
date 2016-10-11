@@ -338,7 +338,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   position: absolute;
   left: 50%;
   top: -12px;
-  min-width: 240px;
+  width: 240px;
 
   transform: translate(-50%, 0);
 
@@ -461,6 +461,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   .contest-form__title {
     display: block;
     width: auto;
+    white-space: nowrap;
     padding-left: 24px;
     padding-right: 24px;
     background-color: #fff;
@@ -583,6 +584,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   .contest-form__submit-area {
     flex-direction: row;
     width: 620px;
+    margin-bottom: 55px;
     align-self: center;
     justify-content: space-between;
     order: 6;
@@ -702,6 +704,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
 
   .contest-form__submit-area {
     width: 940px;
+    margin-bottom: 35px;
   }
 
   .contest-form__required-additional {

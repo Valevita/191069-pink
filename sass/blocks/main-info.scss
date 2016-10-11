@@ -1,37 +1,44 @@
 .main-info {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: $dark-blue;
 }
 
 .main-info__text-wrapper {
-  padding-bottom: 90px;
-
+  padding-bottom: 0px;
+  margin-top: 40px;
 }
 
 .main-info__text {
   @include container;
-  margin-top: 40px;
+  margin-bottom: 26px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: lighter;
   text-align: center;
 }
 
+.main-info__text:last-child {
+  margin-bottom: 0;
+}
+
 .main-info__features {
   box-sizing: border-box;
-  padding-top: 35px;
+  padding-top: 114px;
   background-color: $grey-bg;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: top;
-
 }
 
 
 .main-info__feature-item {
   box-sizing: border-box;
-  margin-top: 40px;
+  margin-top: 33px;
   text-align: center;
+}
+
+.main-info__feature-item br {
+  display: none;
 }
 
 .main-info__feature-item:first-child {
@@ -45,7 +52,7 @@
   @include container;
   padding-bottom: 320px;
   background: $grey-bg url("../img/iphone-screen-mobile@1x.png") no-repeat;
-  background-position: center 450px;
+  background-position: center 425px;
   background-size: 157px auto;
 }
 
@@ -57,7 +64,8 @@
 }
 
 .main-info__feature-item-descr {
-  margin: 0;
+  margin: 0 auto;
+  width: 270px;
   margin-top: 10px;
   font-size: 14px;
   line-height: 24px;
@@ -71,7 +79,7 @@
   @include container;
   box-sizing: border-box;
   padding-left: 310px;
-  padding-top: 50px;
+  padding-top: 36px;
   padding-bottom: 67px;
 }
 
@@ -85,6 +93,9 @@
 }
 
 .main-info__effect-descr {
+  width: 290px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -104,13 +115,19 @@
 
 
 @media (min-width: 700px) {
+  .main-info {
+    margin-bottom: 0;
+  }
+
   .main-info__text-wrapper {
-    margin-top: 100px;
+    margin-top: 127px;
+    margin-bottom: 28px;
   }
 
   .main-info__text {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
+    margin-bottom: 0;
   }
 
   .main-info__text:nth-child(2) {
@@ -130,19 +147,26 @@
 
   .main-info__features-wrapper {
     align-items: flex-end;
-    padding-top: 75px;
-    padding-bottom: 30px;
+    padding-top: 95px;
+    padding-bottom: 43px;
     background-color: transparent;
     background-image:
       url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: left 25px;
     background-size: 268px auto;
+  }
+
+  .main-info__feature-item-descr {
+    width: 300px;
+    margin: 0;
+    margin-top: 13px;
   }
 
 
   .main-info__effect {
     display: block;
+    margin-top: 58px;
   }
 
   .main-info__effect-wrapper {
@@ -180,6 +204,10 @@
 }
 
 @media (min-width: 1200px) {
+  .main-info {
+    margin-bottom: 40px;
+  }
+
   .main-info__features {
     background-size: 100%;
   }
@@ -190,7 +218,8 @@
   }
 
   .main-info__text-wrapper {
-    margin-top: 200px;
+    margin-top: 160px;
+    margin-bottom: 73px;
 
   }
 
@@ -208,8 +237,8 @@
     width: 300px;
     margin: 0;
     padding-top: 360px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 27px;
     text-align: center;
   }
 
@@ -230,19 +259,27 @@
     line-height: 30px;
   }
 
+  .main-info__feature-item br {
+    display: block;
+  }
+
   .main-info__feature-item-descr {
+    width: 230px;
     font-size: 18px;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   .main-info__effect {
+    margin-top: 0;
+    padding-top: 24px;
     background-color: $grey-bg;
   }
 
   .main-info__effect-wrapper {
-    padding-left: 370px;
-    padding-top: 50px;
+    padding-left: 367px;
+    padding-top: 92px;
+    padding-bottom: 115px;
     background-size: 300px auto;
   }
 
@@ -260,10 +297,18 @@
   }
 
   .main-info__effect-title {
+    width: 530px;
     line-height: 30px;
   }
 
+  .main-info__effect-title br {
+    display: none;
+  }
+
   .main-info__effect-descr {
+    width: 530px;
+    margin-top: 25px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
