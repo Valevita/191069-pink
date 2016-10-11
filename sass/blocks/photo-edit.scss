@@ -11,9 +11,87 @@
 
 .photo-edit__controls-wrapper {
   display: flex;
+
   flex-direction: column;
   justify-content: space-between;
 }
+
+.photo-edit__tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  height: 160px;
+  box-sizing: border-box;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 41px;
+  border-bottom: 1px solid #dddfe0;
+
+}
+
+
+.photo-edit__crop {
+
+  width: 44px;
+  height: 48px;
+  background: url("../img/icon-editor-crop.svg") no-repeat;
+  background-size: 44px auto;
+  order: 1;
+
+}
+
+.photo-edit__fill {
+
+  width: 44px;
+  height: 48px;
+  background: url("../img/icon-editor-fill-non-active.svg") no-repeat;
+  background-size: 100%;
+  opacity: 0.3;
+  order: 2;
+
+}
+
+.photo-edit__contrast {
+
+  width: 32px;
+  height: 48px;
+  background: url("../img/icon-editor-contrast-non-active.svg") no-repeat center;
+  background-size: 32px auto;
+  opacity: 0.3;
+  order: 3;
+
+}
+
+.photo-edit__control {
+  position: relative;
+  order: 4;
+
+
+
+}
+
+.photo-edit__scale {
+  width: 240px;
+  height: 2px;
+  background-color: $dark-blue;
+}
+
+.photo-edit__toggle {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  background-color: $grey-bg;
+}
+
+
 
 .photo-edit__img {
   width: 280px;
@@ -21,7 +99,21 @@
   align-self: center;
 }
 
+.photo-edit__control--hidden {
+  display: none;
+}
+
+.photo-edit__line {
+  display: none;
+}
+
+
+
 @media (min-width: 700px) {
+  .photo-edit {
+    padding-bottom: 54px;
+  }
+
   .photo-edit__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -30,16 +122,94 @@
   .photo-edit__img {
     width: 300px;
     height: 400px;
-
+    margin-top: 37px;
   }
 
   .photo-edit__controls-wrapper {
-    width: 300px;
+    width: 275px;
   }
 
   .photo-edit__tools {
-    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 275px;
+    height: auto;
+    border-style: none;
+    padding: 0;
   }
+
+
+  .photo-edit__crop {
+    align-self: center;
+    width: 24px;
+    height: 22px;
+    background-size: 23px auto;
+    order: 0;
+  }
+
+  .photo-edit__fill {
+    align-self: center;
+    width: 24px;
+    height: 22px;
+    background: url("../img/icon-editor-fill.svg") no-repeat;
+    background-size: 100%;
+    order: 0;
+    opacity: 1;
+  }
+
+  .photo-edit__contrast {
+    align-self: center;
+    width: 24px;
+    height: 16px;
+    background: url("../img/icon-editor-contrast.svg") no-repeat center;
+    background-size: 16px auto;
+    order: 0;
+    opacity: 1;
+  }
+
+  .photo-edit__control {
+    position: relative;
+    height: 36px;
+    margin-right: 18px;
+    padding-top: 36px;
+    order: 0;
+  }
+
+  .photo-edit__scale {
+    width: 202px;
+    height: 2px;
+    background-color: $dark-blue;
+  }
+
+  .photo-edit__toggle {
+    position: absolute;
+    top: 29px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    background-color: $grey-bg;
+  }
+
+  .photo-edit__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #dddfe0;
+  }
+
+  .photo-edit__control--hidden {
+    display: inline-block;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -49,15 +219,44 @@
 
   .photo-edit__wrapper {
     width: 800px;
+    margin-left: 80px;
+
   }
 
   .photo-edit__controls-wrapper {
     width: 410px;
   }
 
-  .btn-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .photo-edit__tools {
     width: 410px;
+    margin-left: 0;
+    padding: 0;
   }
+
+  .photo-edit__crop {
+    width: 48px;
+    height: 44px;
+    background-size: 44px auto;
+  }
+
+  .photo-edit__fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .photo-edit__contrast {
+    width: 48px;
+    height: 32px;
+    background-size: 32px auto;
+  }
+
+  .photo-edit__control {
+    margin-right: 18px;
+  }
+
+  .photo-edit__scale {
+    width: 288px;
+  }
+
+
 }

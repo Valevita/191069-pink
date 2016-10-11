@@ -2,6 +2,30 @@
   margin-bottom: 9px;
   color: $pink;
   border: 3px solid $pink;
+
+  &:hover {
+    background-color: $pink;
+    color: #fff;
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+  }
+}
+
+@media (min-width: 700px) {
+  .post-btn {
+    width: 260px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post-btn {
+    width: 183px;
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {

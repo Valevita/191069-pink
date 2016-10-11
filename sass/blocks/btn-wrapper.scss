@@ -1,6 +1,25 @@
 .btn-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  margin: 0 auto;
-  padding-bottom: 20px;
+  margin-top: 40px;
+  padding-bottom: 41px;
   background-color: $grey-bg;
+}
+
+
+@media (min-width: 700px) {
+  .btn-wrapper {
+    width: 275px;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
+  }
 }

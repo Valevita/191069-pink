@@ -1,5 +1,13 @@
 .logo {
   width: 75px;
-  height: 23px;
-  margin-left: 20px;
+  height: 22px;
 }
+
+@media (min-width: 700px) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+

@@ -1,6 +1,31 @@
 .btn-non-active {
   color: #dddfe0;
   border: 3px solid #dddfe0;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(256, 256, 256, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0);
+  }
+}
+
+@media (min-width: 700px) {
+  .btn-non-active {
+    width: 260px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-non-active {
+    width: 183px;
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {

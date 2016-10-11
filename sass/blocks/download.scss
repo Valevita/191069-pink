@@ -10,9 +10,38 @@
 .download__os {
   margin-bottom: 28px;
   text-align: center;
+  font-size: 0;
+}
+
+.download__apple {
+  display: inline-block;
+  vertical-align: middle;
+  width: 47px;
+  height: 56px;
+  margin-right: 35px;
+  background: url(../img/logo-apple.svg) no-repeat;
+}
+
+.download__android {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43px;
+  height: 47px;
+  margin-right: 35px;
+  background: url(../img/logo-android.svg) no-repeat;
+}
+
+.download__windows {
+  display: inline-block;
+  vertical-align: middle;
+  width: 44px;
+  height: 41px;
+  background: url(../img/logo-microsoft.svg) no-repeat;
 }
 
 .download__text {
+  width: 300px;
+  margin: 0 auto;
   font-size: 14px;
   font-weight: lighter;
   line-height: 24px;
@@ -21,10 +50,19 @@
 
 @media (min-width: 700px) {
   .download {
-    position: absolute;
-    top: 267px;
-    width: 300px;
-    background: transparent;
+    margin-left: -320px;
+    background-color: transparent;
+  }
+
+  .download__text {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .download {
+    margin-left: -640px;
   }
 
   .download__text {

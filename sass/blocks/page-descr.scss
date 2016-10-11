@@ -1,6 +1,6 @@
 .page-descr {
-  padding-top: 35px;
-  padding-bottom: 50px;
+  padding-top: 47px;
+  padding-bottom: 30px;
 }
 
 .page-descr__text {
@@ -18,7 +18,12 @@
 
 @media (min-width: 700px) {
   .page-descr {
-    padding-bottom: 75px;
+    padding-top: 90px;
+    padding-bottom: 77px;
+  }
+
+  .page-descr br {
+    display: none;
   }
 
   .page-descr__text {
@@ -27,12 +32,20 @@
   }
 
   .page-descr__additional-text {
-  display: inline;
+    display: inline;
   }
 }
 
 @media (min-width: 1200px) {
+  .page-descr {
+    padding-bottom: 89px;
+  }
+
   .page-descr__text {
-    width: 820px;
+    width: 600px;
+  }
+
+  .page-descr__text br {
+    display: none;
   }
 }

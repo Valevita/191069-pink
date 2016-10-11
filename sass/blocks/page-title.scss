@@ -1,14 +1,15 @@
 .page-title {
-  padding-top: 85px;
-  padding-bottom: 53px;
-  margin-top: -66px;
-  background: $dark-blue url("../img/bg-back-mobile@1x.jpg") no-repeat center;
-  background-size: cover;
+  box-sizing: border-box;
+  min-height: 237px;
+  padding-top: 97px;
+  background: $dark-blue url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+
 }
 
 .page-title__text {
   width: 280px;
   margin: 0 auto;
+
   font-size: 24px;
   font-weight: lighter;
   line-height: 30px;
@@ -16,7 +17,19 @@
   text-align: center;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-title {
+    background: $dark-blue url("../img/bg-back-mobile@2x.jpg") no-repeat center top;
+  }
+}
+
 @media (min-width: 700px) {
+  .page-title {
+    min-height: 440px;
+    padding-top: 180px;
+    background: $dark-blue url("../img/bg-back-tablet@1x.jpg") no-repeat top;
+  }
+
   .page-title__text {
     width: 500px;
     font-size: 50px;
@@ -24,8 +37,28 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .page-title__text {
-    width: 820px;
+@media (min-width: 700px) and (min-resolution: 144dpi),
+       (min-width: 700px) and (min-resolution: 1.5dppx) {
+  .page-title {
+    background: $dark-blue url("../img/bg-back-tablet@2x.jpg") no-repeat top;
   }
+}
+
+@media (min-width: 1200px) {
+  .page-title {
+    min-height: 394px;
+    padding-top: 170px;
+    background: $dark-blue url("../img/bg-back-desktop@1x.jpg") no-repeat top;
+  }
+
+  .page-title__text {
+
+  }
+}
+
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+       (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .page-title {
+    background: $dark-blue url("../img/bg-back-desktop@2x.jpg") no-repeat top;
+   }
 }
