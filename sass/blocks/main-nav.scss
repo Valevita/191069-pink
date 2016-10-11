@@ -16,7 +16,7 @@
 .main-nav__item {
   position: relative;
   box-sizing: border-box;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 17px;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000;
@@ -91,6 +91,11 @@
 
 
 @media (min-width: 700px) {
+
+  .main-nav__item {
+    padding-bottom: 15px;
+  }
+
   .main-nav__item-menu {
     @include container;
     min-height: 110px;
@@ -103,7 +108,8 @@
 @media (min-width: 1200px) {
   .main-nav__list {
     display: flex;
-    @include container;
+    width: 940px;
+    margin: 0 auto;
     min-height: 110px;
     flex-direction: row;
     justify-content: space-between;
@@ -111,7 +117,7 @@
   }
 
   .main-nav__item {
-    margin-left: 80px;
+    margin-left: 82px;
     border-style: none;
     padding: 0;
 

@@ -1,7 +1,6 @@
 .review-block {
-  padding-bottom: 90px;
+  padding-bottom: 5px;
   background-color: #fff;
-  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: bottom;
 
@@ -22,6 +21,9 @@
 }
 
 .review-block__item-content {
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 14px;
   font-size: 14px;
   line-height: 30px;
   font-weight: lighter;
@@ -35,7 +37,7 @@
 }
 
 .review-block__radiobuttons {
-  margin-top: 20px;
+  margin-top: 35px;
   text-align: center;
   font-size: 0;
 }
@@ -101,43 +103,74 @@ input[type="radio"]:checked + .review-block__label::before {
 
 
 @media (min-width: 700px) {
+  .review-block {
+    padding-bottom: 0;
+
+  }
+
+  .review-block__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .review-block__item-name-descr {
     display: block;
-    transform: translateY(120px);
   }
 
   .review-block__item-content {
+    width: 620px;
     font-size: 18px;
-    transform: translateY(-80px);
+    margin-top: 7px;
   }
 
   .review-block__item-name {
     font-size: 20px;
-    transform: translateY(120px);
   }
+
+  .review-block__name-wrappper {
+    margin-top: 36px;
+  }
+
+  .review-block__radiobuttons {
+    margin-top: 40px;
+  }
+
 
 }
 
 @media (min-width: 1200px) {
   .review-block {
     padding-top: 140px;
-    background-image: url("../img/icon-quotes.svg"),
-      url("../img/bg-triangle-white.svg");
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
-    background-position: center 30px, bottom;
-    background-size: 77px 64px, 100%;
+    background-position: center 30px;
+    background-size: 77px 64px;
   }
 
   .review-block__wrapper {
-    @include container;
+    width: 940px;
+    margin: 0 auto;
     position: relative;
+  }
+
+  .review-block__name-wrappper {
+    margin-top: 36px;
+  }
+
+  .review-block__item-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .review-block__item-name-descr {
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .review-block__arrow-left {
     position: absolute;
     display: block;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 18%;
     width: 24px;
     height: 41px;
     background: url("../img/icon-review-arrow-left.svg") no-repeat;
@@ -155,8 +188,7 @@ input[type="radio"]:checked + .review-block__label::before {
   .review-block__arrow-right {
     position: absolute;
     display: block;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 18%;
     right: 0;
     width: 24px;
     height: 41px;
@@ -175,6 +207,7 @@ input[type="radio"]:checked + .review-block__label::before {
 
   .review-block__item-content {
     width: 700px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
   }

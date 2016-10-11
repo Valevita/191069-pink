@@ -1,4 +1,8 @@
 .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
   box-sizing: border-box;
   width: 320px;
@@ -6,6 +10,11 @@
   padding-top: 45px;
   margin: 0 auto;
   box-shadow: 0 3px 10px #d5d5d5;
+  background-color: #fff;
+}
+
+.popup-display {
+  display: block;
 }
 
 .popup__title {
@@ -48,7 +57,7 @@
 }
 
 @media (min-width: 1200px) {
-  .popup--wide {
+  .popup--success {
     width: 780px;
   }
 }

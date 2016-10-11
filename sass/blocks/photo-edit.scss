@@ -55,6 +55,10 @@
 
 }
 
+.photo-edit__fill:hover {
+  opacity: 0.5;
+}
+
 .photo-edit__contrast {
 
   width: 32px;
@@ -64,6 +68,10 @@
   opacity: 0.3;
   order: 3;
 
+}
+
+.photo-edit__contrast:hover {
+  opacity: 0.5;
 }
 
 .photo-edit__control {
@@ -91,6 +99,10 @@
   background-color: $grey-bg;
 }
 
+.photo-edit__toggle:hover {
+  background-color: $pink;
+}
+
 
 
 .photo-edit__img {
@@ -112,6 +124,7 @@
 @media (min-width: 700px) {
   .photo-edit {
     padding-bottom: 54px;
+    margin-bottom: 40px;
   }
 
   .photo-edit__wrapper {
@@ -164,6 +177,10 @@
     opacity: 1;
   }
 
+  .photo-edit__fill:hover {
+    opacity: 1;
+  }
+
   .photo-edit__contrast {
     align-self: center;
     width: 24px;
@@ -180,6 +197,10 @@
     margin-right: 18px;
     padding-top: 36px;
     order: 0;
+  }
+
+  .photo-edit__contrast:hover {
+    opacity: 1;
   }
 
   .photo-edit__scale {
@@ -214,7 +235,8 @@
 
 @media (min-width: 1200px) {
   .photo-edit {
-    @include container;
+    width: 940px;
+    margin: 0 auto;
     margin-bottom: 100px;
   }
 

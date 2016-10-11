@@ -1,8 +1,11 @@
 .main-header {
+  position: relative;
+  z-index: 7;
   font-size: 18px;
   line-height: 32px;
   background-color: $dark-blue;
   color: #fff;
+  margin-bottom: -70px;
 
 }
 
@@ -15,6 +18,10 @@
 
 
 @media (min-width: 700px) {
+  .main-header {
+    margin-bottom: -110px;
+  }
+
   .main-header--closed {
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);

@@ -1,14 +1,17 @@
 .price {
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 124px;
   padding-bottom: 40px;
   background-color: $grey-bg;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 
 
 .price__radiobuttons {
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -21,7 +24,7 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  margin-right: 16px;
+  margin-right: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -72,7 +75,24 @@ input[type="radio"]:checked + .price__label::before {
 }
 
 @media (min-width: 700px) {
+  .price {
+    padding-top: 105px;
+    padding-bottom: 67px;
+    margin-bottom: 45px;
+  }
+
   .price__radiobuttons {
     display: none;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .price {
+    margin-top: 30px;
+    margin-bottom: 65px;
+    padding-top: 160px;
+    padding-bottom: 97px;
+    background-size: 100%;
   }
 }
