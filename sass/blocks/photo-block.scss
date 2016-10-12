@@ -7,7 +7,6 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-
 .photo-block__comment {
   display: flex;
   flex-direction: column;
@@ -71,19 +70,18 @@
   height: 180px;
 }
 
+
 @media (min-width: 700px) {
   .photo-block {
     align-self: auto;
     width: 300px;
     min-height: 455px;
     margin-bottom: 20px;
-
   }
 
   .photo-block__img {
     width: 300px;
     height: 300px;
-
   }
 
   .photo-block__comment {
@@ -109,6 +107,7 @@
   }
 }
 
+
 @media (min-width: 1200px) {
   .photo-block {
     min-height: 555px;
@@ -118,7 +117,6 @@
   .photo-block__img {
     height: 400px;
   }
-
 
 }
 

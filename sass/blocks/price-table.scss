@@ -108,6 +108,7 @@
 
 
 @media (min-width: 700px) {
+
   .price-table {
     @include container;
     overflow: visible;
@@ -203,6 +204,7 @@
 
 
 @media (min-width: 1200px) {
+
   .price-table__item-header--hit::before {
     width: 72px;
     height: 72px;

@@ -3,7 +3,6 @@
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: bottom;
-
   color: $dark-blue;
 }
 
@@ -21,12 +20,11 @@
 }
 
 .review-block__item-content {
-  width: 270px;
+  width: 280px;
   margin: 0 auto;
   margin-top: 14px;
   font-size: 14px;
   line-height: 30px;
-  font-weight: lighter;
 }
 
 .review-block__item-name-descr {
@@ -103,9 +101,9 @@ input[type="radio"]:checked + .review-block__label::before {
 
 
 @media (min-width: 700px) {
+
   .review-block {
     padding-bottom: 0;
-
   }
 
   .review-block__item {
@@ -135,10 +133,10 @@ input[type="radio"]:checked + .review-block__label::before {
     margin-top: 40px;
   }
 
-
 }
 
 @media (min-width: 1200px) {
+
   .review-block {
     padding-top: 140px;
     background-image: url("../img/icon-quotes.svg");
@@ -203,7 +201,6 @@ input[type="radio"]:checked + .review-block__label::before {
       opacity: 0.1;
     }
   }
-
 
   .review-block__item-content {
     width: 700px;

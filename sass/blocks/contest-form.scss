@@ -339,9 +339,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   left: 50%;
   top: -12px;
   width: 240px;
-
   transform: translate(-50%, 0);
-
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -394,9 +392,6 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   }
 }
 
-
-
-
 .contest-form__required {
   margin-top: 35px;
   font-size: 14px;
@@ -427,6 +422,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
 
 
 @media (min-width: 700px) {
+
   .contest-form__full-name {
     width: 620px;
     margin-bottom: 13px;
@@ -457,7 +453,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   }
 
   .contest-form__fieldset-wrapper-1, .contest-form__fieldset-wrapper-2 {
-  background-color: #fff;
+    background-color: #fff;
   }
 
   .contest-form__fieldset-wrapper-1 {
@@ -513,7 +509,6 @@ input[type="radio"] + .contest-form__label-radio:active::before {
     width: 620px;
     margin-top: 70px;
     margin-bottom: 60px;
-
     border: 2px solid #e5e5e5;
     order: 3;
   }
@@ -526,7 +521,6 @@ input[type="radio"] + .contest-form__label-radio:active::before {
 
   .contest-form__contacts-wrapper {
     flex-direction: column-reverse;
-
   }
 
   .contest-form__contacts .contest-form__label {
@@ -609,6 +603,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
 
 
 @media (min-width: 1200px) {
+
   .contest-form__flex-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -634,7 +629,6 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   .contest-form__fieldset-wrapper-2 {
     display: flex;
     width: 435px;
-
   }
 
   .contest-form__app {
@@ -688,14 +682,11 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   .contest-form__achievements-content .contest-form__list-item:nth-child(2n+1) {
     width: 258px;
     order: 1;
-
   }
 
   .contest-form__achievements-content .contest-form__list-item:nth-child(2n) {
     width: 258px;
     order: 2;
-
-
   }
 
   .contest-form__achievements-content .contest-form__list-item:nth-child(3n) {
@@ -704,7 +695,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
 
   .contest-form__emotions {
     margin-top: 62px;
-    margin-bottom: 68px;
+    margin-bottom: 66px;
     padding-bottom: 42px;
   }
 
@@ -716,7 +707,7 @@ input[type="radio"] + .contest-form__label-radio:active::before {
 
   .contest-form__submit-area {
     width: 940px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .contest-form__required-additional {
@@ -724,23 +715,4 @@ input[type="radio"] + .contest-form__label-radio:active::before {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

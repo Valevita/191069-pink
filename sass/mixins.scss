@@ -9,10 +9,12 @@
 @mixin container() {
   width: 320px;
   margin: 0 auto;
+
   @media (min-width: 700px) {
     width: 620px;
     margin: 0 auto
   }
+
   @media (min-width: 1200px) {
     width: 940px;
     margin: 0 auto

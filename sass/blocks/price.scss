@@ -8,8 +8,6 @@
   background-position: top;
 }
 
-
-
 .price__radiobuttons {
   margin-top: 40px;
   text-align: center;
@@ -74,7 +72,9 @@ input[type="radio"]:checked + .price__label::before {
   border: 3px solid $dark-blue;
 }
 
+
 @media (min-width: 700px) {
+
   .price {
     padding-top: 105px;
     padding-bottom: 67px;
@@ -88,6 +88,7 @@ input[type="radio"]:checked + .price__label::before {
 
 
 @media (min-width: 1200px) {
+
   .price {
     margin-top: 30px;
     margin-bottom: 65px;
