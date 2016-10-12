@@ -47,10 +47,9 @@
 
 .price-table__item-header {
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 22px;
   background-color: $dark-blue;
-  border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   color: #fff;
@@ -67,6 +66,7 @@
   position: absolute;
   display: block;
   top: 0;
+  left: -2px;
   width: 73px;
   height: 72px;
   background-image: url("../img/bg-hit.svg");
@@ -77,8 +77,8 @@
 .price-table__item-header--hit::after {
   content: "хит";
   position: absolute;
-  top: 10px;
-  left: 12px;
+  top: 12px;
+  left: 10px;
   transform: rotate(-45deg);
 }
 
@@ -98,13 +98,17 @@
 
 .price-table__mobile-text {
   display: inline-block;
-  margin-top: 12px;
-  margin-left: 20px;
+  margin-top: 14px;
+  margin-left: 22px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
 
 @media (min-width: 700px) {
+
   .price-table {
     @include container;
     overflow: visible;
@@ -148,12 +152,12 @@
 
   .price-table__item-header--hit::before {
     width: 60px;
-    height: 61px;
+    height: 62px;
   }
 
   .price-table__item-header--hit::after {
-    top: 7px;
-    left: 7px;
+    top: 5px;
+    left: 8px;
   }
 
   .price-table__item-header-type {
@@ -172,8 +176,9 @@
 
   .price-table__item {
     box-sizing: border-box;
-    padding-top: 13px;
-    padding-bottom: 10px;
+    min-height: 47px;
+    padding-top: 8px;
+    padding-bottom: 5px;
     padding-left: 15px;
     border-bottom: 2px solid #e5e5e5;
     border-right: 2px solid #e5e5e5;
@@ -199,6 +204,7 @@
 
 
 @media (min-width: 1200px) {
+
   .price-table__item-header--hit::before {
     width: 72px;
     height: 72px;
@@ -207,6 +213,32 @@
   .price-table__item-header--hit::after {
     top: 8px;
     left: 12px;
+  }
+
+  .price-table__item-header-type {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .price-table__item-header-price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .price-table__column {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .price-table__item-header {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .price-table__item {
+    min-height: 60px;
+    padding-top: 15px;
+    padding-left: 18px;
   }
 }
 

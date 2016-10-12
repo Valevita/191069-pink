@@ -66,20 +66,22 @@
   color: $dark-blue;
 }
 
+.panorama__like-block {
+  display: flex;
+  align-items: center;
+}
+
 .panorama__like {
-  display: inline-block;
+  margin-left: 18px;
   font-size: 12px;
   line-height: 24px;
   font-weight: lighter;
   text-transform: uppercase;
   color: $pink;
-  transform: translateX(32px);
 }
 
 .panorama__like-img {
-  position: absolute;
-  left: 18px;
-  bottom: 27px;
+  display: block;
   width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart.svg");
@@ -87,6 +89,7 @@
 
 
 @media (min-width: 700px) {
+
   .panorama {
     width: auto;
     margin-top: 0;
@@ -104,7 +107,6 @@
 
   }
 
-
   .panorama__comment {
     @include container;
     padding-left: 27px;
@@ -112,21 +114,29 @@
     padding-bottom: 14px;
   }
 
-  .panorama__like {
+  .panorama__like-block {
     position: absolute;
     top: 25px;
-    right: 93px;
+    right: 29px;
+  }
 
+  .panorama__like {
+    order: 1;
+    margin-left: 0;
+    margin-right: 18px;
   }
 
   .panorama__like-img {
-    right: 29px;
-    top: 30px;
-    left: auto;
+    order: 2;
   }
 }
 
+
 @media (min-width: 1200px) {
+
+  .panorama {
+    margin-top: 8px;
+  }
 
   .panorama__img {
     width: 1200px;

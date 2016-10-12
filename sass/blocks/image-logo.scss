@@ -6,8 +6,6 @@
   margin-bottom: 40px;
 }
 
-
-
 .image-logo__svg:active path.image-logo__letter {
   fill: #283645;
   opacity: 0.3;
@@ -33,6 +31,7 @@
 .image-logo__svg:hover path {
   fill: #d22856;
 }
+
 
 @media (min-width: 700px) {
   .image-logo {

@@ -4,7 +4,6 @@
 
 .main-nav__list {
   display: flex;
-
   flex-direction: column;
   list-style: none;
   margin: 0;
@@ -16,8 +15,8 @@
 .main-nav__item {
   position: relative;
   box-sizing: border-box;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 15px;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000;
 }
@@ -51,8 +50,6 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
-
-
 }
 
 .main-nav__toggle {
@@ -91,6 +88,11 @@
 
 
 @media (min-width: 700px) {
+
+  .main-nav__item {
+    padding-bottom: 14px;
+  }
+
   .main-nav__item-menu {
     @include container;
     min-height: 110px;
@@ -101,9 +103,11 @@
 
 
 @media (min-width: 1200px) {
+
   .main-nav__list {
     display: flex;
-    @include container;
+    width: 940px;
+    margin: 0 auto;
     min-height: 110px;
     flex-direction: row;
     justify-content: space-between;
@@ -114,7 +118,6 @@
     margin-left: 80px;
     border-style: none;
     padding: 0;
-
     align-self: center;
   }
 
@@ -127,7 +130,6 @@
     margin-left: 0;
 
   }
-
 
   .main-nav__link {
     font-weight: normal;

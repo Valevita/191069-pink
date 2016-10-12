@@ -7,8 +7,9 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-
 .photo-block__comment {
+  display: flex;
+  flex-direction: column;
   position: relative;
   box-sizing: border-box;
   width: $width;
@@ -16,7 +17,7 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 17px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   background-color: $grey-bg;
 }
 
@@ -43,20 +44,22 @@
   color: $dark-blue;
 }
 
+.photo-block__like-block {
+  display: flex;
+  align-items: center;
+
+}
+
 .photo-block__like {
-  display: inline-block;
+  margin-left: 18px;
   font-size: 12px;
   line-height: 24px;
   font-weight: lighter;
   text-transform: uppercase;
   color: $pink;
-  transform: translateX(32px);
 }
 
 .photo-block__like-img {
-  position: absolute;
-  left: 18px;
-  bottom: 27px;
   width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart.svg");
@@ -67,40 +70,43 @@
   height: 180px;
 }
 
+
 @media (min-width: 700px) {
   .photo-block {
     align-self: auto;
     width: 300px;
     min-height: 455px;
     margin-bottom: 20px;
-
   }
 
   .photo-block__img {
     width: 300px;
     height: 300px;
-
   }
 
   .photo-block__comment {
+    justify-content: space-between;
     width: 300px;
     padding-left: 27px;
+    padding-right: 32px;
     padding-top: 23px;
-    padding-bottom: 45px;
+    padding-bottom: 25px;
+  }
+
+  .photo-block__like-block {
+    justify-content: space-between;
   }
 
   .photo-block__like {
-    position: absolute;
-    transform: translateX(0px);
-    bottom: 23px;
+    order: 1;
+    margin-left: 0;
   }
 
   .photo-block__like-img {
-    right: 32px;
-    bottom: 29px;
-    left: auto;
+    order: 2;
   }
 }
+
 
 @media (min-width: 1200px) {
   .photo-block {
@@ -112,10 +118,5 @@
     height: 400px;
   }
 
-
-
-  .photo-block__like-img {
-    bottom: 30px;
-  }
 }
 

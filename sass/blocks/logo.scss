@@ -3,7 +3,6 @@
   height: 22px;
 }
 
-
 .logo__svg .logo__letter {
   transform: translate(-72px, -17px);
 }
@@ -22,7 +21,9 @@
   opacity: 0.3;
 }
 
+
 @media (min-width: 700px) {
+
   .logo {
     width: 147px;
     height: 40px;
