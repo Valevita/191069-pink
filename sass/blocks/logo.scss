@@ -3,7 +3,7 @@
   height: 22px;
 }
 
-.logo__svg .logo__letter {
+.logo__svg {
   transform: translate(-72px, -17px);
 }
 
@@ -29,9 +29,10 @@
     height: 40px;
   }
 
-  .logo__svg .logo__letter {
+  .logo__svg {
     transform: translate(0, 0);
   }
+
 }
 
 
